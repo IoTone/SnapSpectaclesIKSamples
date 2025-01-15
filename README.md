@@ -19,7 +19,7 @@ TODO
 
 ## Advanced Topics
 
-These won't be convered in this repo.
+These won't be covered in this repo.
 
 - CameraKit
 - SnapML
