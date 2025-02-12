@@ -1,6 +1,8 @@
 ## Overview
 
-there are some great samples available for Snap Spectacles.  Most of these samples are extremely advanced.  Most apps will start with some basic components:
+This is a collection of samples related to Snap Spectacles InteractionKit (IK).
+
+There are some great samples available for Snap Spectacles.  Most of these samples are extremely advanced.  Most apps will start with some basic components:
 
 - splash screen
 - a main menu
@@ -15,7 +17,10 @@ The goal of this repo is to eventually design different apps that utilize all of
 
 Here are a list of the core widgets
 
-TODO
+- 2D
+  - Text on Screen
+- 3D
+  - Text on Screen
 
 ## Advanced Topics
 
