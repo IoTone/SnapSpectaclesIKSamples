@@ -21,7 +21,7 @@ Here are a list of the core widgets
   - Text on Screen
 - 3D
   - Text on Screen
-
+- WebView (https://developers.snap.com/spectacles/about-spectacles-features/apis/web-view#getting-started)
 ## Advanced Topics
 
 These won't be covered in this repo.
