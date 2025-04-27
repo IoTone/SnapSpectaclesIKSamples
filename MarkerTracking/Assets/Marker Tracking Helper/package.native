@@ -1,0 +1,36 @@
+- !<NativePackageDescriptor/2e314608-c6d0-4f5f-85ba-95e146745463>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 7
+    patch: 2
+    build: 25030805
+    type: Unset
+  Description: |-
+    Marker Tracking Helper
+    
+    In Lens Studio 5.7.2 Preview Panel, the marker tracking image is 30cm. Set the Image Marker size to 30 cm for testing. When testing on a device, adjust the Image Marker size to match the actual image  dimensions in centimeters.
+    
+    Preliminary Setup:
+    - Ensure the main camera exist in the scene before dragging in an example
+    - For Extended Marker Tracking Example, ensure the main camera has a Device Tracking Component with tracking mode set to World
+  SvgIcon: ""
+  InternalVersion: 1
+  VersionMajor: 0
+  VersionMinor: 9
+  VersionPatch: 0
+  UpdateCheckpoint: 55
+  ExportUid: 84a5bd50-dd07-4732-b655-2dbea827fb95
+  ComponentUid: 3aefa5e2-fecc-41e1-86b3-0b9a35f9fde0
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: Marker Tracking Helper
+    AssetId: 6GzeWW01NligIFeyHOhfQg
+    Hash: aee15ded1227320fae772048d2e492d6
+    Version:
+      major: 1
+      minor: 0
+      patch: 0
+      build: 0

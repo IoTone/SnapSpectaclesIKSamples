@@ -1,0 +1,132 @@
+- !<ObjectPrefab/46c178d6-e4b0-4c3a-bc58-96ccb32c974c>
+  PackagePath: ""
+  objects:
+    - !<own> 27bbf1ce-7988-478c-ac93-ed910d55cb1f
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/03850aa5-bbb6-4bb2-b82d-4864f4590118>
+  PrefabRemaps:
+    []
+  Name: MarkerCallback
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> dc3060e9-5363-4ec4-aaa5-8ba90dfa9a77
+- !<SceneObject/27bbf1ce-7988-478c-ac93-ed910d55cb1f>
+  PrefabRemaps:
+    []
+  Name: Resizable Marker Tracking with Callbacks
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> ff67ca0c-65dc-4c21-8250-7d766899c700
+    - !<own> 03850aa5-bbb6-4bb2-b82d-4864f4590118
+  Components:
+    - !<own> 825095d5-1bcb-48d8-8ac8-ddfdccb8e3be
+- !<MarkerTrackingComponent/4e5237fa-0165-4019-8d5c-0c3731901675>
+  PrefabRemaps:
+    []
+  Name: Marker Tracking
+  Enabled: true
+  Marker: !<reference> de4bb9d9-dad4-4b9d-b0c0-b67a46ad93f9
+- !<Image/5be5e093-9111-440f-90c7-8bfd5d35fa76>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Fit
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 21c7861a-34fa-49f3-8740-8fc5e95007ba
+  FlipX: false
+  FlipY: false
+  RotationAngle: 0
+  Pivot: {x: 0.000000, y: 0.000000}
+  ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/6fc817bb-6c6c-4cdd-a6c8-c94f5e4f2d59>
+  PrefabRemaps:
+    []
+  Name: Image
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 29.280960, y: 29.280960, z: 29.280960}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5be5e093-9111-440f-90c7-8bfd5d35fa76
+- !<ScriptComponent/825095d5-1bcb-48d8-8ac8-ddfdccb8e3be>
+  PrefabRemaps:
+    []
+  Name: ImageTrackingController
+  Enabled: true
+  ScriptAsset: !<reference> 957896b7-7147-4fb0-96c2-a64ac3adc1f6
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      markerTrackingComponent: !<reference.MarkerTrackingComponent> 4e5237fa-0165-4019-8d5c-0c3731901675
+      resizeObjectArray: !<reference.SceneObject[]>
+        - !<reference> 6fc817bb-6c6c-4cdd-a6c8-c94f5e4f2d59
+      editEventCallbacks: true
+      customFunctionScript: !<reference.ScriptComponent> dc3060e9-5363-4ec4-aaa5-8ba90dfa9a77
+      onMarkerFoundFunctionNames: !<string[]>
+        - onMarkerFound
+      onMarkerLostFunctionNames: !<string[]>
+        - onMarkerLost
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/dc3060e9-5363-4ec4-aaa5-8ba90dfa9a77>
+  PrefabRemaps:
+    []
+  Name: MarkerCallback
+  Enabled: true
+  ScriptAsset: !<reference> 77fa0528-04da-4e3a-8746-feeeba31ca74
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      animationImage: !<reference.Image> 5be5e093-9111-440f-90c7-8bfd5d35fa76
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/ff67ca0c-65dc-4c21-8250-7d766899c700>
+  PrefabRemaps:
+    []
+  Name: Image Tracking
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 6fc817bb-6c6c-4cdd-a6c8-c94f5e4f2d59
+  Components:
+    - !<own> 4e5237fa-0165-4019-8d5c-0c3731901675
