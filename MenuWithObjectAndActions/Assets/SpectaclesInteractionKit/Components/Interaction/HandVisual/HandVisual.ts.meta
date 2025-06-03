@@ -4,7 +4,7 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 27fb63e0-f430-409f-b812-20bc1f008d3c
   PackageType: NotAPackage
-  ImporterSettings: !<AssetImporterSettings/830742f7-e0a3-428f-a12f-df4bc21289e8>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   AssetDataMap:
     TypeScriptAsset: !<own> 69c8692f-ebb8-45c5-8b65-8a66ad27951b
@@ -19,7 +19,7 @@
     - '// @ui {"widget":"group_start", "label":"Hand Visual"}'
     - '// @input string handType {"widget":"combobox", "values":[{"label":"Left", "value":"left"}, {"label":"Right", "value":"right"}]}'
     - '// @input string selectVisual = "Default" {"widget":"combobox", "values":[{"label":"Default", "value":"Default"}, {"label":"Occluder", "value":"Occluder"}]}'
-    - // @input HandInteractor handInteractor
+    - // @input AssignableType handInteractor
     - // @input Component.RenderMeshVisual handMesh
     - '// @input float handMeshRenderOrder = 9999 {"hint":"The desired render order of the handMesh"}'
     - '// @input SceneObject root {"hint":"Parent of both the rig and the mesh"}'
@@ -80,7 +80,7 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: 2e935ee2-300a-443f-836e-212374d70e62
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable
@@ -188,3 +188,7 @@
     -
       {}
   SvgIcon: ""
+  SetupScript:
+    code: ""
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000

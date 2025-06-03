@@ -1,6 +1,5 @@
 - !<AssetImportMetadata/2f205b70-f0dc-4b84-87d5-f637a859d229>
-  ImporterSettings: !<AssetImporterSettings/b42ef071-da4e-4d82-9462-1bfe78e31634>
-    {}
+  ImporterSettings: !<AssetImporterSettings/b42ef071-da4e-4d82-9462-1bfe78e31634> {}
   ImportedAssetIds:
     TypeScriptAsset: !<reference> 52a65860-24de-431c-b6b7-7a6585a77d3c
   ImporterName: TypeScriptAssetImporter
@@ -9,11 +8,9 @@
   AssetDataMap:
     TypeScriptAsset: !<own> 98041818-04ed-4d32-9681-c9da213fa6b4
   PackagePolicy: CannotBeUnpacked
-  DependentFiles:
-    []
+  DependentFiles: []
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-  ExtraData:
-    {}
+  ExtraData: {}
 - !<TypeScriptAssetData/98041818-04ed-4d32-9681-c9da213fa6b4>
   Icon: ""
   Description: ""
@@ -21,7 +18,7 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: f13887de-c66a-455c-ad0a-f772a8671b67
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable
@@ -34,8 +31,7 @@
     sphereCastEnabled: false
     spherecastDistanceThresholds: false
     spherecastRadii: false
-  ScriptTypesHidden:
-    {}
+  ScriptTypesHidden: {}
   DefaultScriptInputs:
     - sphereCastEnabled: false
       spherecastRadii: !<float[]>
@@ -52,25 +48,24 @@
       _drawDebug: false
       mouseTargetingMode: !<float> 2.000000
   ScriptTypes:
-    -
-      {}
+    - {}
   InputLines:
-    - '// @ui {"widget":"group_start", "label":"Interactor"}'
+    - // @ui {"widget":"group_start", "label":"Interactor"}
     - // @input bool _drawDebug
-    - '// @ui {"widget":"group_start", "label":"Spherecast Configuration"}'
+    - // @ui {"widget":"group_start", "label":"Spherecast Configuration"}
     - // @input bool sphereCastEnabled
-    - '// @input number[] spherecastRadii = "{0.5, 2.0, 4.0}" {"showIf":"sphereCastEnabled", "showIfValue":true}'
-    - '// @input number[] spherecastDistanceThresholds = "{0, 12, 30}" {"showIf":"sphereCastEnabled", "showIfValue":true}'
-    - '// @ui {"widget":"group_end"}'
-    - '// @ui {"widget":"group_start", "label":"Targeting Configuration"}'
+    - // @input number[] spherecastRadii = "{0.5, 2.0, 4.0}" {"showIf":"sphereCastEnabled", "showIfValue":true}
+    - // @input number[] spherecastDistanceThresholds = "{0, 12, 30}" {"showIf":"sphereCastEnabled", "showIfValue":true}
+    - // @ui {"widget":"group_end"}
+    - // @ui {"widget":"group_start", "label":"Targeting Configuration"}
     - // @input float _maxRaycastDistance = 500
     - // @input float indirectTargetingVolumeMultiplier = 1
-    - '// @ui {"widget":"group_end"}'
-    - '// @ui {"widget":"group_start", "label":"Indirect Drag Provider"}'
+    - // @ui {"widget":"group_end"}
+    - // @ui {"widget":"group_start", "label":"Indirect Drag Provider"}
     - // @input float indirectDragThreshold = 3
-    - '// @ui {"widget":"group_end"}'
-    - '// @ui {"widget":"group_end"}'
-    - '// @ui {"widget":"group_start", "label":"MouseInteractor"}'
-    - '// @input float mouseTargetingMode = 2 {"hint":"Sets the return value of MouseInteractor.activeTargetingMode for cases where non-indirect targeting needs to be tested specifically. Useful whenever your code has checks for interactor.activeTargetingMode === TargetingMode.X.", "widget":"combobox", "values":[{"label":"Direct", "value":1}, {"label":"Indirect", "value":2}, {"label":"All", "value":3}, {"label":"Poke", "value":4}]}'
-    - '// @ui {"widget":"group_end"}'
+    - // @ui {"widget":"group_end"}
+    - // @ui {"widget":"group_end"}
+    - // @ui {"widget":"group_start", "label":"MouseInteractor"}
+    - // @input float mouseTargetingMode = 2 {"hint":"Sets the return value of MouseInteractor.activeTargetingMode for cases where non-indirect targeting needs to be tested specifically. Useful whenever your code has checks for interactor.activeTargetingMode === TargetingMode.X.", "widget":"combobox", "values":[{"label":"Direct", "value":1}, {"label":"Indirect", "value":2}, {"label":"All", "value":3}, {"label":"Poke", "value":4}]}
+    - // @ui {"widget":"group_end"}
   SvgIcon: ""

@@ -4,24 +4,21 @@
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> a6105daf-0f11-45a0-8684-102e44534dbb
   PackageType: NotAPackage
-  ImporterSettings: !<AssetImporterSettings/755a777c-bde5-4fb9-adc4-a3ac821287c6>
-    {}
+  ImporterSettings: !<AssetImporterSettings/755a777c-bde5-4fb9-adc4-a3ac821287c6> {}
   AssetDataMap:
     TypeScriptAsset: !<own> e5dc66fb-d375-465a-a8b2-83f0853cf4d8
   PackagePolicy: CannotBeUnpacked
-  DependentFiles:
-    []
+  DependentFiles: []
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-  ExtraData:
-    {}
+  ExtraData: {}
 - !<TypeScriptAssetData/e5dc66fb-d375-465a-a8b2-83f0853cf4d8>
   InputLines:
     - // @input Asset.Material lineMaterial
-    - '// @input vec3 _beginColor = "{1, 1, 0}" {"widget":"color"}'
-    - '// @input vec3 _endColor = "{1, 1, 0}" {"widget":"color"}'
+    - // @input vec3 _beginColor = "{1, 1, 0}" {"widget":"color"}
+    - // @input vec3 _endColor = "{1, 1, 0}" {"widget":"color"}
     - // @input float lineWidth = 0.5
     - // @input float lineLength = 160
-    - '// @input float lineStyle = 2 {"widget":"combobox", "values":[{"label":"Full", "value":0}, {"label":"Split", "value":1}, {"label":"FadedEnd", "value":2}]}'
+    - // @input float lineStyle = 2 {"widget":"combobox", "values":[{"label":"Full", "value":0}, {"label":"Split", "value":1}, {"label":"FadedEnd", "value":2}]}
     - // @input bool shouldStick = true
     - // @input Component.ScriptComponent _interactor
   Icon: ""
@@ -30,7 +27,7 @@
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
-  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ComponentUid: 3bc71cbe-5c9a-4d86-9590-91079e313fdb
   ExportUid: 00000000-0000-0000-0000-000000000000
   CurrentVisibility: Editable
   MaxVisibility: Editable
@@ -43,8 +40,7 @@
     lineStyle: false
     lineWidth: false
     shouldStick: false
-  ScriptTypesHidden:
-    {}
+  ScriptTypesHidden: {}
   DefaultScriptInputs:
     - lineMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
       lineWidth: 0.500000
@@ -55,6 +51,5 @@
       _endColor: !<Vec3> {x: 1.000000, y: 1.000000, z: 0.000000}
       _interactor: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
-    -
-      {}
+    - {}
   SvgIcon: ""
