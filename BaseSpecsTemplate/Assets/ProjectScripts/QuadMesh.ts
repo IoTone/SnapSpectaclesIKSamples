@@ -43,12 +43,11 @@ export class NewScript extends BaseScriptComponent {
           "Component.RenderMeshVisual"
         );
         this.meshVisual.mainMaterial = this.material;
+        
         if(this.builder.isValid()){
             this.meshVisual.mesh = this.builder.getMesh();
             this.builder.updateMesh();
-        }
-        
-        else{
+        } else{
             print("Mesh data invalid!");
         }
     }
