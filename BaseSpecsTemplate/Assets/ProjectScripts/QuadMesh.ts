@@ -1,8 +1,5 @@
 @component
-export class NewScript extends BaseScriptComponent {
-
-    // Builds a quad mesh and applies it to meshVisual
-    // @input meshVisual : MeshVisual;
+export class QuadMesh extends BaseScriptComponent {
     @input
     @hint("Material to apply to the 3D line mesh")
     public material!: Material;
