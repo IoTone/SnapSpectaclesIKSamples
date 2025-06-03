@@ -200,6 +200,25 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<ScriptComponent/06c6c047-4ac7-475f-a1a1-dd1c091977bb>
+  PrefabRemaps:
+    []
+  Name: CubeMesh
+  Enabled: true
+  ScriptAsset: !<reference> b9050b77-6ed5-4f92-852b-7968d72b2ea4
+  ScriptInputsDefault:
+    center: true
+    size: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      meshVisual: !<reference.RenderMeshVisual> 6a1b97ee-7523-427e-913c-dacffef2c3c2
+      center: !<Vec3> {x: 0.000000, y: 0.000000, z: 0.000000}
+      size: !<Vec3> {x: 4.000000, y: 4.000000, z: 4.000000}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/2a182f4e-3ecb-4445-af5f-3b213f50f1e1>
   PrefabRemaps:
     []
@@ -227,8 +246,11 @@
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   Children:
+    - !<own> e95f730e-20eb-4cc2-a010-0e3e3e73a2a8
     - !<own> db6098f0-e5c0-4f88-9b83-cbc33ec913d5
     - !<own> e127502a-f501-42d7-9022-fb6cf5e8f6f4
+    - !<own> fd1cef93-9020-47b4-b118-5245d61a4d19
+    - !<own> 5699ec7f-8ec9-4dce-9a99-833b0a3276a3
   Components:
     []
 - !<ScriptComponent/4aef1d78-62e1-416b-a6c5-8cbc98f35366>
@@ -254,7 +276,8 @@
   ScriptInputs:
     "":
       pathPoints: !<reference.SceneObject[]>
-        - !<reference> 5f948b17-5846-4b34-8799-d55b4929a46b
+        - !<reference> 2a182f4e-3ecb-4445-af5f-3b213f50f1e1
+        - !<reference> fd4e6b9b-1cd2-4522-a8f4-773ca2d25c03
       _radius: !<float> 10.000000
       _circleSegments: !<float> 16.000000
       _interpolationSteps: !<float> 10.000000
@@ -270,6 +293,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/5699ec7f-8ec9-4dce-9a99-833b0a3276a3>
+  PrefabRemaps:
+    []
+  Name: CubeMesh
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 06c6c047-4ac7-475f-a1a1-dd1c091977bb
 - !<SceneObject/5f948b17-5846-4b34-8799-d55b4929a46b>
   PrefabRemaps:
     []
@@ -336,6 +374,28 @@
   ScriptTypes:
     "":
       {}
+- !<ScriptComponent/879020b8-190b-4a69-8bd5-5fb4f3232feb>
+  PrefabRemaps:
+    []
+  Name: FunctionRenderer
+  Enabled: true
+  ScriptAsset: !<reference> f52c1b11-6f0f-44aa-9c5a-41b14f9d01b6
+  ScriptInputsDefault:
+    renderMode: true
+    resolution: true
+    scale: true
+    color: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      renderMode: volume
+      resolution: !<float> 50.000000
+      scale: !<float> 1.000000
+      color: !<Vec4> {x: 0.000000, y: 1.000000, z: 0.000000, w: 1.000000}
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/9a51342d-cdea-4335-9f9d-dee7d110a1ca>
   PrefabRemaps:
     []
@@ -381,6 +441,23 @@
     InvertRotation: false
   SurfaceOptions: !<SurfaceOptions>
     EnhanceWithNativeAR: false
+- !<ScriptComponent/d2b1b8b9-d75c-45e4-af39-45e95b2bad01>
+  PrefabRemaps:
+    []
+  Name: ScatterPlot
+  Enabled: true
+  ScriptAsset: !<reference> 5cf0b699-402e-47f9-8e74-dc99e3e4c978
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      material: !<reference.Material> 0c3133b0-7200-40fa-a5d3-23cd210898ee
+      _color: !<Vec3> {x: 0.462028, y: 0.838285, z: 1.000000}
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/d45c206f-244a-43dc-bf5b-fe4fc3324a55>
   PrefabRemaps:
     []
@@ -431,6 +508,36 @@
     []
   Components:
     - !<own> 4aef1d78-62e1-416b-a6c5-8cbc98f35366
+- !<SceneObject/e95f730e-20eb-4cc2-a010-0e3e3e73a2a8>
+  PrefabRemaps:
+    []
+  Name: ScatterPlot
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -10.000000, y: 10.000000, z: 20.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> d2b1b8b9-d75c-45e4-af39-45e95b2bad01
+- !<SceneObject/fd1cef93-9020-47b4-b118-5245d61a4d19>
+  PrefabRemaps:
+    []
+  Name: FunctionRenderer
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 879020b8-190b-4a69-8bd5-5fb4f3232feb
 - !<SceneObject/fd4e6b9b-1cd2-4522-a8f4-773ca2d25c03>
   PrefabRemaps:
     []

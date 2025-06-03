@@ -167,6 +167,7 @@ export class Line3D extends BaseScriptComponent {
   }
 
   onAwake(): void {
+    this.setTestPositions();
     this.setupMeshVisual();
     this.generateMesh();
   }
@@ -211,10 +212,13 @@ export class Line3D extends BaseScriptComponent {
   }
 
   private generateMesh(): void {
+    
+    
     if (!this.pathPoints || this.pathPoints.length < 2) {
       print("Line3D: Need at least 2 path points to generate mesh");
       return;
     }
+    
 
     this.meshBuilder = new MeshBuilder([
       { name: "position", components: 3 },
