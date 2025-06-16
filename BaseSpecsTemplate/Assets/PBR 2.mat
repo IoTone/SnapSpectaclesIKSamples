@@ -4,66 +4,7 @@
     - !<own> 49cce75f-7ee4-4ac6-9a9a-8532e57bdf70
 - !<PassInfo/49cce75f-7ee4-4ac6-9a9a-8532e57bdf70>
   CachedProperties:
-    - Port_Input1_N014:
-        typeIdx: 1
-        value: 0.000000
-    - Port_Position1_N066:
-        typeIdx: 1
-        value: 0.000000
-    - Port_Position1_N070:
-        typeIdx: 1
-        value: 0.000000
-    - Port_Position1_N073:
-        typeIdx: 1
-        value: 0.000000
-    - Port_Position1_N077:
-        typeIdx: 1
-        value: 0.000000
-    - Port_Position2_N073:
-        typeIdx: 1
-        value: 0.000000
-    - Port_Value0_N077:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - Port_Value2_N067:
-        typeIdx: 1
-        value: 0.000000
-    - Port_Value2_N077:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - Port_Value3_N040:
-        typeIdx: 1
-        value: 0.000000
-    - Port_Value3_N060:
-        typeIdx: 1
-        value: 0.000000
-    - Port_Value_N008:
-        typeIdx: 2
-        value: false
-    - PreviewEnabled:
-        typeIdx: 0
-        value: 0
-    - PreviewNodeID:
-        typeIdx: 0
-        value: 0
-    - endColor:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - endWidth:
-        typeIdx: 1
-        value: 1.000000
-    - maxAlpha:
-        typeIdx: 1
-        value: 1.000000
-    - startColor:
-        typeIdx: 5
-        value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
-    - startWidth:
-        typeIdx: 1
-        value: 1.000000
-    - visualStyle:
-        typeIdx: 0
-        value: 0
+    []
   DepthWrite: true
   DepthTest: true
   DepthFunction: LessEqual
@@ -78,5 +19,64 @@
     []
   BlendMode: Disabled
   Properties:
-    {}
+    Port_Input1_N014:
+      typeIdx: 1
+      value: 0.000000
+    Port_Position1_N066:
+      typeIdx: 1
+      value: 0.000000
+    Port_Position1_N070:
+      typeIdx: 1
+      value: 0.000000
+    Port_Position1_N073:
+      typeIdx: 1
+      value: 0.000000
+    Port_Position1_N077:
+      typeIdx: 1
+      value: 0.000000
+    Port_Position2_N073:
+      typeIdx: 1
+      value: 0.000000
+    Port_Value0_N077:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Value2_N067:
+      typeIdx: 1
+      value: 0.000000
+    Port_Value2_N077:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    Port_Value3_N040:
+      typeIdx: 1
+      value: 0.000000
+    Port_Value3_N060:
+      typeIdx: 1
+      value: 0.000000
+    Port_Value_N008:
+      typeIdx: 2
+      value: false
+    PreviewEnabled:
+      typeIdx: 0
+      value: 0
+    PreviewNodeID:
+      typeIdx: 0
+      value: 0
+    endColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    endWidth:
+      typeIdx: 1
+      value: 1.000000
+    maxAlpha:
+      typeIdx: 1
+      value: 1.000000
+    startColor:
+      typeIdx: 5
+      value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+    startWidth:
+      typeIdx: 1
+      value: 1.000000
+    visualStyle:
+      typeIdx: 0
+      value: 0
   Pass: !<reference> 719a076d-4225-4fe9-9c0b-5d36443d3091

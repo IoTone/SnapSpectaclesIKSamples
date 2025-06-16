@@ -153,8 +153,6 @@
   DecayType: None
   DecayLimit: false
   DecayRange: 40.000000
-  UseEstimation: false
-  EstimationIntensity: !<float> 1.000000
 - !<SceneObject/00056e79-b066-62ca-0000-000000001406>
   PrefabRemaps:
     []
@@ -203,8 +201,6 @@
   DecayType: None
   DecayLimit: false
   DecayRange: 40.000000
-  UseEstimation: false
-  EstimationIntensity: !<float> 1.000000
 - !<ScriptComponent/0028c5f9-e649-496d-ac54-fded7530e06e>
   PrefabRemaps:
     []
@@ -330,7 +326,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<BodyComponent/01b24bc1-c9d7-44a1-92d7-97a79416f3a3>
@@ -498,6 +493,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -511,6 +507,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -744,7 +741,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: -60.000000}
+    position: {x: 0.000000, y: -20.000000, z: -60.000000}
     rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -763,7 +760,7 @@
   PrefabRemaps:
     []
   Name: "[Manipulate Example] Mesh"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 25.000000, y: 10.000000, z: -70.000000}
@@ -831,6 +828,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -844,6 +842,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -1059,6 +1058,26 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/1229003f-89bd-455a-80e7-5173f7d50e64>
+  PrefabRemaps:
+    []
+  Name: PlaneControls
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000031, z: -0.000000}
+    rotation: {x: -0.000000, y: 0.000003, z: -0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1cd5cd24-0951-4705-af44-30f57c5eb662
+    - !<own> 8903aeb7-45b8-4d3b-b63a-1417c71fd39b
+    - !<own> a9b6117c-e52e-4bb3-85cc-431383cc93ba
+    - !<own> eef15b7c-9bb5-497f-b231-4dce48715fc9
+    - !<own> 3fbd0746-de71-4990-bf97-8cedaa2b8e36
+    - !<own> a564ffcc-ddc8-4833-b2f2-8ca028a615c2
 - !<ScriptComponent/12fdf5f5-8c5c-45d4-8889-e698e9316423>
   PrefabRemaps:
     []
@@ -1067,6 +1086,7 @@
   ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
   ScriptInputsDefault:
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -1080,6 +1100,7 @@
     "":
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -1248,6 +1269,21 @@
     - !<own> 34f61df1-9a9c-42e7-8625-364d95f3729d
   Components:
     []
+- !<SceneObject/167fdc29-1b5a-45ae-baf0-db68b7c9aa2b>
+  PrefabRemaps:
+    []
+  Name: FormalText
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 3.435606, y: 2.133715, z: -70.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> de88281e-ab6b-44a1-a4ae-93c53e27eb73
 - !<ScreenTransform/16b52fae-8981-471b-9644-9ba5ce8af2ea>
   PrefabRemaps:
     []
@@ -1386,6 +1422,22 @@
   Components:
     - !<own> 290f0fc1-9b46-47f6-982f-54a7a25fd67d
     - !<own> 8e8af524-5030-4bca-b4f0-41daa2ea8f2e
+- !<ScriptComponent/1898f6ea-88ac-40e3-9fae-892e7a33559a>
+  PrefabRemaps:
+    []
+  Name: TransformNotifier
+  Enabled: true
+  ScriptAsset: !<reference> 42fbdefa-2b72-47b6-bfac-3a2162b4f1a6
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      {}
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/18a7b3c9-c868-4dfe-92d0-9c0c3397246e>
   PrefabRemaps:
     []
@@ -1488,7 +1540,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/19751ef5-0025-47a8-880e-7d405b5f1f55>
@@ -1643,6 +1694,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -1656,6 +1708,41 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
+      allowMultipleInteractors: true
+      enablePokeDirectionality: false
+      acceptableXDirections: !<float> 0.000000
+      acceptableYDirections: !<float> 0.000000
+      acceptableZDirections: !<float> 1.000000
+      isSynced: true
+      acceptableSyncInteractionTypes: !<float> 7.000000
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/1cd5cd24-0951-4705-af44-30f57c5eb662>
+  PrefabRemaps:
+    []
+  Name: Interactable
+  Enabled: true
+  ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
+  ScriptInputsDefault:
+    targetingMode: true
+    enableInstantDrag: true
+    isScrollable: true
+    allowMultipleInteractors: true
+    enablePokeDirectionality: true
+    acceptableXDirections: true
+    acceptableYDirections: true
+    acceptableZDirections: true
+    isSynced: true
+    acceptableSyncInteractionTypes: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      targetingMode: !<float> 3.000000
+      enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -1714,9 +1801,6 @@
   RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-  Size:
-    x: !<float> 1.000000
-    y: !<float> 1.000000
 - !<SceneObject/1df88fa7-9f2c-4b2d-8748-ee47ad487f54>
   PrefabRemaps:
     []
@@ -1865,7 +1949,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/1fa8c724-b2bf-4820-9cd8-c2ea95b3460d>
@@ -1968,7 +2051,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/206a77c8-f01d-4b56-b3e1-cf0b33acc76a>
@@ -2703,7 +2785,6 @@
     LetterSpacing: 0.035000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/2bb9171c-1bf6-4cf3-8d72-618671a43034>
@@ -3042,6 +3123,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/3220064e-4eab-4675-8ff5-82500bdecb70>
+  PrefabRemaps:
+    []
+  Name: PlotRenderInfo
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -1.572618, y: 132.814178, z: 0.322006}
+    rotation: {x: -54.734741, y: -0.458331, z: 89.351624}
+    scale: {x: 2.500240, y: 0.069276, z: 0.046188}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 5cfee811-3351-4aa7-a029-434561fc1b0d
 - !<SceneObject/3236f304-5aab-46d3-8b2d-6ef914fff52e>
   PrefabRemaps:
     []
@@ -3134,6 +3230,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -3147,6 +3244,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -3165,6 +3263,7 @@
   ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
   ScriptInputsDefault:
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -3178,6 +3277,7 @@
     "":
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -3197,6 +3297,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -3210,6 +3311,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -3228,6 +3330,7 @@
   ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
   ScriptInputsDefault:
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -3241,6 +3344,7 @@
     "":
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -3303,6 +3407,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -3316,6 +3421,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -3471,7 +3577,6 @@
     LetterSpacing: 0.035000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/3699bfe6-82a7-4140-8b9f-0abe489774ef>
@@ -3999,6 +4104,28 @@
     - !<own> 64ffd6d0-30d3-41a3-8f8e-affa53eb2812
   Components:
     []
+- !<ScriptComponent/3fbd0746-de71-4990-bf97-8cedaa2b8e36>
+  PrefabRemaps:
+    []
+  Name: InteractableOutlineFeedback
+  Enabled: true
+  ScriptAsset: !<reference> 657cbbe5-2a9c-4889-93fb-fd72ba8a1d52
+  ScriptInputsDefault:
+    hoveringColor: true
+    activatingColor: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      targetOutlineMaterial: !<reference.Material> fefa0256-03d4-444c-b107-8880ccd2ad8f
+      hoveringColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 0.040000, w: 1.000000}
+      activatingColor: !<Vec4> {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+      outlineWeight: 0.025000
+      meshVisuals: !<reference.RenderMeshVisual[]>
+        - !<reference> 99abc02d-d91d-43a0-acbc-67eef1db7d72
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/3fc931b2-a400-46e3-a65f-11a12e3632ef>
   PrefabRemaps:
     []
@@ -4232,7 +4359,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/40e40509-1975-4f6e-9069-58394a5778d4>
@@ -4456,7 +4582,6 @@
     LetterSpacing: 0.050000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/45e782aa-c63f-4d56-9c41-e111c47f6895>
@@ -4894,9 +5019,7 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   EnableBatching: false
-  ShadowMode: None
 - !<ScriptComponent/51d87e24-a070-4aed-b7a6-7113d267318c>
   PrefabRemaps:
     []
@@ -5646,7 +5769,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/5594a54e-5584-4238-beb4-7b179c08cf50>
@@ -5777,6 +5899,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -5790,6 +5913,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -6081,6 +6205,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -6094,6 +6219,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -6211,6 +6337,22 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<ScriptComponent/5cfee811-3351-4aa7-a029-434561fc1b0d>
+  PrefabRemaps:
+    []
+  Name: PlotRenderInfo
+  Enabled: true
+  ScriptAsset: !<reference> 236737e2-e6cf-42aa-9f4d-e71c2ddb0b9c
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      interactableMesh: !<MappingBased.AssignableType> 1cd5cd24-0951-4705-af44-30f57c5eb662
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/5d133df7-c721-4f10-8009-c780337fe0a1>
   PrefabRemaps:
     []
@@ -6300,7 +6442,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/5da2ce0b-778c-4b66-83f7-be64d470725c>
@@ -6560,7 +6701,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/618245fc-a689-4196-b340-5e83e357fc2c>
@@ -6666,6 +6806,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -6679,6 +6820,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -7067,6 +7209,7 @@
   ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
   ScriptInputsDefault:
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -7080,6 +7223,7 @@
     "":
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -7192,6 +7336,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -7205,6 +7350,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -7482,7 +7628,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<RenderMeshVisual/6e9844a4-93e6-4865-8022-494fec43218b>
@@ -8013,7 +8158,6 @@
     LetterSpacing: 0.035000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/770f6b8e-2864-4d97-8623-667f045430ae>
@@ -8146,7 +8290,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<Text/77f50ba2-5144-499d-b7d5-f4c0fc6f46e3>
@@ -8624,6 +8767,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -8637,6 +8781,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -8795,6 +8940,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -8808,6 +8954,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -9087,7 +9234,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/879020b8-190b-4a69-8bd5-5fb4f3232feb>
@@ -9112,6 +9258,29 @@
   ScriptTypes:
     "":
       {}
+- !<BodyComponent/8903aeb7-45b8-4d3b-b63a-1417c71fd39b>
+  PrefabRemaps:
+    []
+  Name: Physics Body
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: true
+    Size: {x: 15.000000, y: 15.000000, z: 15.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: false
+  Dynamic: false
+  BodySetting: Density
+  BodySettingValue: 1.000000
+  Damping: 0.000000
+  AngularDamping: 0.000000
 - !<SceneObject/89182c9f-c43e-4bf3-b42a-92a6cb47b32f>
   PrefabRemaps:
     []
@@ -9751,9 +9920,23 @@
     LetterSpacing: 0.035000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
+- !<SceneObject/991aeaf8-d9eb-472a-8d70-0aa292d4b53d>
+  PrefabRemaps:
+    []
+  Name: TransformNotifier
+  Enabled: false
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 1898f6ea-88ac-40e3-9fae-892e7a33559a
 - !<RenderMeshVisual/99abc02d-d91d-43a0-acbc-67eef1db7d72>
   PrefabRemaps:
     []
@@ -10393,6 +10576,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -10406,6 +10590,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -10468,6 +10653,32 @@
       _enableZTranslation: true
       showRotationProperties: false
       _rotationAxis: All
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/a564ffcc-ddc8-4833-b2f2-8ca028a615c2>
+  PrefabRemaps:
+    []
+  Name: InteractableAudioFeedback
+  Enabled: true
+  ScriptAsset: !<reference> 1ad7da86-2c32-418c-bdf1-b7150c07c912
+  ScriptInputsDefault:
+    _playAudioOnHover: true
+    _hoverAudioTrack: true
+    _playAudioOnTriggerStart: true
+    _triggerStartAudioTrack: true
+    _playAudioOnTriggerEnd: true
+    _triggerEndAudioTrack: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      _playAudioOnHover: false
+      _hoverAudioTrack: !<reference.AudioTrackAsset> 97bf97ae-b2da-47d7-bde6-003f597fe888
+      _playAudioOnTriggerStart: true
+      _triggerStartAudioTrack: !<reference.AudioTrackAsset> edad7d53-55da-40b1-9025-fad0e7207862
+      _playAudioOnTriggerEnd: true
+      _triggerEndAudioTrack: !<reference.AudioTrackAsset> 82028831-1631-4d7b-b548-ff6be4e0a2ba
   ScriptTypes:
     "":
       {}
@@ -10667,7 +10878,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ColliderComponent/a761f7b6-24cb-4aac-b555-48198f448762>
@@ -10739,6 +10949,61 @@
   Components:
     - !<own> ac253426-c9db-4b73-8c8c-20edb1fe5c1f
     - !<own> 00a1f2ba-03fe-4244-906f-d3cc4c588c2b
+- !<ScriptComponent/a9b6117c-e52e-4bb3-85cc-431383cc93ba>
+  PrefabRemaps:
+    []
+  Name: InteractableManipulation
+  Enabled: true
+  ScriptAsset: !<reference> 664b556b-1946-4c2c-866a-e675b4e86006
+  ScriptInputsDefault:
+    minimumScaleFactor: true
+    maximumScaleFactor: true
+    enableTranslation: true
+    enableRotation: true
+    enableScale: true
+    enableStretchZ: true
+    showStretchZProperties: true
+    zStretchFactorMin: true
+    zStretchFactorMax: true
+    useFilter: true
+    showFilterProperties: true
+    minCutoff: true
+    beta: true
+    dcutoff: true
+    showTranslationProperties: true
+    _enableXTranslation: true
+    _enableYTranslation: true
+    _enableZTranslation: true
+    showRotationProperties: true
+    _rotationAxis: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      manipulateRootSceneObject: !<reference.SceneObject> 1229003f-89bd-455a-80e7-5173f7d50e64
+      minimumScaleFactor: 0.250000
+      maximumScaleFactor: !<float> 20.000000
+      enableTranslation: true
+      enableRotation: true
+      enableScale: true
+      enableStretchZ: true
+      showStretchZProperties: false
+      zStretchFactorMin: !<float> 1.000000
+      zStretchFactorMax: !<float> 12.000000
+      useFilter: true
+      showFilterProperties: false
+      minCutoff: !<float> 2.000000
+      beta: 0.015000
+      dcutoff: !<float> 1.000000
+      showTranslationProperties: false
+      _enableXTranslation: true
+      _enableYTranslation: true
+      _enableZTranslation: true
+      showRotationProperties: false
+      _rotationAxis: All
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/aa406718-b7de-427a-a122-5a1954080737>
   PrefabRemaps:
     []
@@ -11023,6 +11288,9 @@
     - !<own> a1783498-72ac-4d4c-ab29-ae3a8a6238b3
     - !<own> 17bcf723-4888-46b6-b4ba-61e1631ea8b8
     - !<own> 8487d520-3130-4f12-ab60-433ae0fb8dec
+    - !<own> 167fdc29-1b5a-45ae-baf0-db68b7c9aa2b
+    - !<own> d66a56d4-efcc-4a6c-9387-7f8ecde0f1da
+    - !<own> 991aeaf8-d9eb-472a-8d70-0aa292d4b53d
   Components:
     []
 - !<RenderMeshVisual/aee17398-7909-4f1f-be19-0c03f82eabe5>
@@ -11100,6 +11368,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -11113,6 +11382,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -11273,6 +11543,7 @@
   ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
   ScriptInputsDefault:
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -11286,6 +11557,7 @@
     "":
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -11316,7 +11588,7 @@
   PrefabRemaps:
     []
   Name: "[Manipulate Example] Box"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 25.000000, y: -6.000000, z: -70.000000}
@@ -11456,6 +11728,7 @@
   ScriptAsset: !<reference> 652e631a-22d0-4941-9f74-2943df59f34c
   ScriptInputsDefault:
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -11469,6 +11742,7 @@
     "":
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -11617,7 +11891,6 @@
     LetterSpacing: 0.035000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/ba57879d-efb8-4ff7-93ee-27e5ab25b303>
@@ -11711,7 +11984,7 @@
   PrefabRemaps:
     []
   Name: "[Manipulate Example] Sphere"
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 25.000000, y: -22.000000, z: -70.000000}
@@ -11922,7 +12195,6 @@
     LetterSpacing: 0.050000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScreenTransform/bd6f8067-86f7-40e6-91c4-dbe88857b421>
@@ -12211,7 +12483,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/bfb766ad-40c0-429f-a6de-423e49926b2f>
@@ -12246,6 +12517,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -12259,6 +12531,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -12343,7 +12616,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/c06bd1c1-e053-4a09-aac1-14434aa8e843>
@@ -12549,6 +12821,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -12562,6 +12835,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -12759,7 +13033,7 @@
   PrefabRemaps:
     []
   Name: PlaneTest
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform:
     position: {x: -20.000000, y: 0.000000, z: 0.000000}
@@ -12850,6 +13124,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -12863,6 +13138,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -13479,6 +13755,7 @@
   ScriptAsset: !<reference> f9b29b39-ec8c-41bd-8b53-769ae9b818b8
   ScriptInputsDefault:
     selectVisual: true
+    handMeshRenderOrder: true
     autoJointMapping: true
     wrist: true
     thumbToWrist: true
@@ -13507,6 +13784,7 @@
     pinkyUpperJoint: true
     pinkyTip: true
     shouldThumbPokeGlow: true
+    tipGlowRenderOrder: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -13515,6 +13793,7 @@
       selectVisual: Default
       handInteractor: !<MappingBased.AssignableType> 9f1ffe02-eb24-4327-a66a-1fbdeb9e373c
       handMesh: !<reference.RenderMeshVisual> 9cdfa185-c2db-4f78-8a89-cd95da0bed79
+      handMeshRenderOrder: !<float> 9999.000000
       root: !<reference.SceneObject> 37be4b63-6ebd-4bd8-a143-5c44948ebece
       autoJointMapping: true
       wrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
@@ -13552,6 +13831,7 @@
       tapProximityThreshold: !<float> 8.000000
       pinchTexture: !<reference.Texture> 3391429c-5c74-4b5c-b9fc-4ad3ba30bda4
       tapTexture: !<reference.Texture> e33d2c7f-1d12-4250-92fb-433c25ce1923
+      tipGlowRenderOrder: !<float> 10000.000000
       handOutlineMaterial: !<reference.Material> 7ac80b6c-979a-4a00-a694-099f296be161
       handOccluderMaterial: !<reference.Material> 5d5c762b-f0dd-4c06-b76f-bcb8f8fb525f
   ScriptTypes:
@@ -13901,6 +14181,22 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<SceneObject/d66a56d4-efcc-4a6c-9387-7f8ecde0f1da>
+  PrefabRemaps:
+    []
+  Name: PlaneManager
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 10.493728, y: -13.090443, z: -45.106720}
+    rotation: {x: 0.000000, y: 0.000000, z: -0.000005}
+    scale: {x: 25.000002, y: 0.200000, z: 25.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 1229003f-89bd-455a-80e7-5173f7d50e64
+    - !<own> 3220064e-4eab-4675-8ff5-82500bdecb70
+  Components:
+    []
 - !<ScriptComponent/d704a55e-889f-44e9-adf1-c878e0b64fbe>
   PrefabRemaps:
     []
@@ -14345,6 +14641,82 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<Text/de88281e-ab6b-44a1-a4ae-93c53e27eb73>
+  PrefabRemaps:
+    []
+  Name: Text
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Text: X+Y+Z=1
+  Editable: false
+  ShowEditingPreview: true
+  TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
+  SizeToFit: false
+  FontSize: 48
+  Font: !<reference> 00000000-0000-0000-0000-000000000000
+  LayoutRect:
+    left: -7.500000
+    bottom: -2.250000
+    right: 7.500000
+    top: 2.250000
+  OverflowVertical: Overflow
+  OverflowHorizontal: Overflow
+  Fill: !<TextFill>
+    Mode: Solid
+    Color: {x: 1.000000, y: 0.252796, z: 1.000000, w: 1.000000}
+    Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    TileCount: 5.000000
+    TileZone: Rect
+    TextureStretch: FitWidth
+  Outline: !<OutlineSettings>
+    Enabled: true
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Size: 0.250000
+  Dropshadow: !<DropshadowSettings>
+    Enabled: true
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    OffsetX: 0.250000
+    OffsetY: 0.250000
+  Background: !<BackgroundSettings>
+    Enabled: false
+    Fill: !<TextFill>
+      Mode: Solid
+      Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
+      Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      TileCount: 5.000000
+      TileZone: Rect
+      TextureStretch: FitWidth
+    Margins:
+      left: 0.000000
+      bottom: 0.000000
+      right: 0.000000
+      top: 0.000000
+    CornerRadius: 0.000000
+  AdvancedLayout: !<TextAdvancedLayout>
+    ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
+    LetterSpacing: 0.000000
+    LineSpacing: 1.000000
+    CapitalizationOverride: None
+  DepthTest: false
+  TwoSided: false
 - !<RenderMeshVisual/de89242b-4cb0-4ff4-ba4d-6cc1af8e2b0c>
   PrefabRemaps:
     []
@@ -14460,12 +14832,12 @@
   PrefabRemaps:
     []
   Name: PlaneObj
-  Enabled: false
+  Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 25.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    position: {x: 19.634504, y: -11.555746, z: -22.408211}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 20.000000, y: 20.000000, z: 20.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -14678,9 +15050,6 @@
   RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-  Size:
-    x: !<float> 1.000000
-    y: !<float> 1.000000
 - !<ScriptComponent/e42a9884-3036-4cf0-9fa5-476b9fe389d6>
   PrefabRemaps:
     []
@@ -14924,6 +15293,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -14937,6 +15307,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -15127,6 +15498,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -15140,6 +15512,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -15198,6 +15571,26 @@
     - !<own> a3b9ec2a-fc1f-40bd-9b78-d1144046de00
   Components:
     []
+- !<RenderMeshVisual/eef15b7c-9bb5-497f-b231-4dce48715fc9>
+  PrefabRemaps:
+    []
+  Name: Render Mesh Visual
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> c71dde88-df6c-46a6-8426-d07b956a747e
+  Mesh: !<reference> e542623c-1432-4bfa-881d-a28905bd9e57
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
 - !<RenderMeshVisual/ef94ea3b-6d4c-4067-8c4e-40f76103d939>
   PrefabRemaps:
     []
@@ -15278,6 +15671,7 @@
   ScriptAsset: !<reference> f9b29b39-ec8c-41bd-8b53-769ae9b818b8
   ScriptInputsDefault:
     selectVisual: true
+    handMeshRenderOrder: true
     autoJointMapping: true
     wrist: true
     thumbToWrist: true
@@ -15306,6 +15700,7 @@
     pinkyUpperJoint: true
     pinkyTip: true
     shouldThumbPokeGlow: true
+    tipGlowRenderOrder: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -15314,6 +15709,7 @@
       selectVisual: Default
       handInteractor: !<MappingBased.AssignableType> bbda0bf9-317e-4d6b-b26f-d0768af6f166
       handMesh: !<reference.RenderMeshVisual> c5de61a0-b98c-4c3b-854c-2a1f4d4c5c52
+      handMeshRenderOrder: !<float> 9999.000000
       root: !<reference.SceneObject> f6ca6780-9cad-4a62-8e4c-f2f07bc1bd62
       autoJointMapping: true
       wrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
@@ -15351,6 +15747,7 @@
       tapProximityThreshold: !<float> 8.000000
       pinchTexture: !<reference.Texture> 3391429c-5c74-4b5c-b9fc-4ad3ba30bda4
       tapTexture: !<reference.Texture> e33d2c7f-1d12-4250-92fb-433c25ce1923
+      tipGlowRenderOrder: !<float> 10000.000000
       handOutlineMaterial: !<reference.Material> 7ac80b6c-979a-4a00-a694-099f296be161
       handOccluderMaterial: !<reference.Material> bb8479b9-021e-4c42-809a-60edf99cbeac
   ScriptTypes:
@@ -15380,6 +15777,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -15393,6 +15791,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
@@ -15908,6 +16307,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
@@ -15921,6 +16321,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
