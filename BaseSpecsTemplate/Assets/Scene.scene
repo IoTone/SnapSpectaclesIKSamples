@@ -1272,13 +1272,13 @@
 - !<SceneObject/167fdc29-1b5a-45ae-baf0-db68b7c9aa2b>
   PrefabRemaps:
     []
-  Name: FormalText
+  Name: FormulaText
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 3.435606, y: 2.133715, z: -70.000000}
+    position: {x: 3.435606, y: 8.000000, z: -70.000000}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -6350,6 +6350,7 @@
   ScriptInputs:
     "":
       interactableMesh: !<MappingBased.AssignableType> 1cd5cd24-0951-4705-af44-30f57c5eb662
+      functionText: !<reference.Text> de88281e-ab6b-44a1-a4ae-93c53e27eb73
   ScriptTypes:
     "":
       {}
@@ -14657,7 +14658,7 @@
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
-  SizeToFit: false
+  SizeToFit: true
   FontSize: 48
   Font: !<reference> 00000000-0000-0000-0000-000000000000
   LayoutRect:
@@ -14832,7 +14833,7 @@
   PrefabRemaps:
     []
   Name: PlaneObj
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 19.634504, y: -11.555746, z: -22.408211}
