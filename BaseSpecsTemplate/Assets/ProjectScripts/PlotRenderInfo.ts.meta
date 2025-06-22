@@ -38,11 +38,11 @@
   DefaultScriptInputs:
     - interactableMesh: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
       functionText: !<reference.Text> 00000000-0000-0000-0000-000000000000
-      mainAudioLoop: !<reference.AudioTrackAsset> 00000000-0000-0000-0000-000000000000
+      mainAudioLoop: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
     - '// @input AssignableType interactableMesh {"hint":"Choose an Interactable Mesh"}'
     - '// @input Component.Text functionText {"hint":"Choose a Text Scene Object"}'
-    - '// @input Asset.AudioTrackAsset mainAudioLoop {"hint":"Audio Soundtrack"}'
+    - '// @input Component.AudioComponent mainAudioLoop {"hint":"Audio Soundtrack"}'

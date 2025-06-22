@@ -1065,9 +1065,9 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000031, z: -0.000000}
-    rotation: {x: -0.000000, y: 0.000003, z: -0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    position: {x: -0.524441, y: 5219.496094, z: -21.144466}
+    rotation: {x: 172.940140, y: -0.000000, z: 0.000000}
+    scale: {x: 2.847457, y: 0.028475, z: 2.847457}
     hasSegmentScaleCompensation: false
   Children:
     []
@@ -1729,7 +1729,6 @@
     targetingMode: true
     enableInstantDrag: true
     isScrollable: true
-    allowMultipleInteractors: true
     enablePokeDirectionality: true
     acceptableXDirections: true
     acceptableYDirections: true
@@ -1743,7 +1742,7 @@
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
       isScrollable: false
-      allowMultipleInteractors: true
+      allowMultipleInteractors: false
       enablePokeDirectionality: false
       acceptableXDirections: !<float> 0.000000
       acceptableYDirections: !<float> 0.000000
@@ -3135,7 +3134,7 @@
     scale: {x: 2.500240, y: 0.069276, z: 0.046188}
     hasSegmentScaleCompensation: false
   Children:
-    []
+    - !<own> c4fe88f8-1f24-4733-8c7c-3d844119ee63
   Components:
     - !<own> 5cfee811-3351-4aa7-a029-434561fc1b0d
 - !<SceneObject/3236f304-5aab-46d3-8b2d-6ef914fff52e>
@@ -6351,6 +6350,7 @@
     "":
       interactableMesh: !<MappingBased.AssignableType> 1cd5cd24-0951-4705-af44-30f57c5eb662
       functionText: !<reference.Text> de88281e-ab6b-44a1-a4ae-93c53e27eb73
+      mainAudioLoop: !<reference.AudioComponent> bfd1d152-dd94-48eb-bfd6-92b4e05f50d5
   ScriptTypes:
     "":
       {}
@@ -11140,7 +11140,7 @@
     - !<own> 2dff2515-54d6-4377-aa9f-a3598fc635f7
     - !<own> d361e979-4e06-460d-8c3a-93f00ae31a4c
   Components:
-    []
+    - !<own> d2a582d7-965f-4ca4-9cc3-e0e2a03dbe1f
 - !<SceneObject/ab42ae21-0cef-4a13-b47e-33e006ba50c5>
   PrefabRemaps:
     []
@@ -12543,6 +12543,23 @@
   ScriptTypes:
     "":
       {}
+- !<AudioComponent/bfd1d152-dd94-48eb-bfd6-92b4e05f50d5>
+  PrefabRemaps:
+    []
+  Name: Audio
+  Enabled: true
+  AudioTrack: !<reference> 01f26164-a319-432b-b5c0-f5bb39a15594
+  EnableAutoplayLoop: true
+  Volume: 1.000000
+  EnableMixToSnap: false
+  RecordVolume: 1.000000
+  EnableSpatialAudio: true
+  EnableDistanceEffect: false
+  CurveType: Logarithm
+  MinDistance: 0.000000
+  MaxDistance: 100.000000
+  EnableDirectivityEffect: false
+  EnablePositionEffect: false
 - !<Text/bfd72592-4ec7-4e32-bc3b-da1e6b7808b6>
   PrefabRemaps:
     []
@@ -12867,6 +12884,21 @@
   BlendNormals: true
   BlendShapes:
     Pinch: 0.000000
+- !<SceneObject/c4fe88f8-1f24-4733-8c7c-3d844119ee63>
+  PrefabRemaps:
+    []
+  Name: AudioLoop
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> bfd1d152-dd94-48eb-bfd6-92b4e05f50d5
 - !<ScriptComponent/c5380089-4c8d-46ce-9daf-472d36c7aaa5>
   PrefabRemaps:
     []
@@ -13874,6 +13906,24 @@
   ScriptTypes:
     "":
       {}
+- !<ColliderComponent/d2a582d7-965f-4ca4-9cc3-e0e2a03dbe1f>
+  PrefabRemaps:
+    []
+  Name: Physics Collider
+  Enabled: true
+  Shape: !<Box>
+    FitVisual: false
+    Size: {x: 35.000000, y: 35.000000, z: 35.000000}
+  Matter: !<reference> 00000000-0000-0000-0000-000000000000
+  Filter: !<reference> 00000000-0000-0000-0000-000000000000
+  OverlapFilter: !<reference> 00000000-0000-0000-0000-000000000000
+  WorldSettings: !<reference> 00000000-0000-0000-0000-000000000000
+  EnableSmoothing: false
+  PositionTension: 30.000000
+  RotationTension: 30.000000
+  ForceCompound: false
+  Intangible: false
+  ShowCollider: true
 - !<ScriptComponent/d2b1b8b9-d75c-45e4-af39-45e95b2bad01>
   PrefabRemaps:
     []
@@ -14189,9 +14239,9 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 10.493728, y: -13.090443, z: -45.106720}
-    rotation: {x: 0.000000, y: 0.000000, z: -0.000005}
-    scale: {x: 25.000002, y: 0.200000, z: 25.000000}
+    position: {x: 10.493728, y: -13.090443, z: 400.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 20.000000, y: 0.001000, z: 20.000000}
     hasSegmentScaleCompensation: false
   Children:
     - !<own> 1229003f-89bd-455a-80e7-5173f7d50e64
