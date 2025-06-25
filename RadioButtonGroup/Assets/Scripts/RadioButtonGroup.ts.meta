@@ -1,0 +1,43 @@
+- !<AssetImportMetadata/f3bd8fb9-0e9f-4eba-95db-9ea3d487a5d2>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> f86b6ff1-4231-4573-870f-0f7410e8e326
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> f86b6ff1-4231-4573-870f-0f7410e8e326
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 548cdb88-e4d2-4102-895d-51d95244cc11
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/548cdb88-e4d2-4102-895d-51d95244cc11>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: c469c146-1fed-43c2-8b92-f3446bac9b61
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    radiobuttonGroupMembers: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - radiobuttonGroupMembers: !<MappingBased.AssignableType[]>
+        []
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - '// @input AssignableType[] radiobuttonGroupMembers {"hint":"Array of RadioButtons/toggle buttons to use"}'
