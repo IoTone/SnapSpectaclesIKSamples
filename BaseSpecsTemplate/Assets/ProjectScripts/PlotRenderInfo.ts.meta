@@ -30,7 +30,6 @@
   ScriptInputsHidden:
     functionText: false
     interactableMesh: false
-    mainAudioLoop: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -38,11 +37,9 @@
   DefaultScriptInputs:
     - interactableMesh: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
       functionText: !<reference.Text> 00000000-0000-0000-0000-000000000000
-      mainAudioLoop: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
     - '// @input AssignableType interactableMesh {"hint":"Choose an Interactable Mesh"}'
     - '// @input Component.Text functionText {"hint":"Choose a Text Scene Object"}'
-    - '// @input Component.AudioComponent mainAudioLoop {"hint":"Audio Soundtrack"}'
