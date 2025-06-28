@@ -46,7 +46,7 @@
       followRotation: true
       lineMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
       _color: !<Vec3> {x: 1.000000, y: 1.000000, z: 0.000000}
-      lineWidth: 0.500000
+      lineWidth: !<float> 20.000000
       lineStyle: !<float> 0.000000
       segments: !<float> 32.000000
   ScriptTypes:

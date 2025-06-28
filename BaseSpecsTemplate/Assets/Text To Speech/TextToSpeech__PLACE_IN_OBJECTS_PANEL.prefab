@@ -1,5 +1,5 @@
 - !<ObjectPrefab/de0d4a21-d507-411c-bf92-a7bbd8c1d676>
-  PackagePath: TextToSpeech__PLACE_IN_OBJECTS_PANEL
+  PackagePath: ""
   objects:
     - !<own> fd66b15b-0cb2-49ff-8577-29af02854a9f
   LazyLoading: false

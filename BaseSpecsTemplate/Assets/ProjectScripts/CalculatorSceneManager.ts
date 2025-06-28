@@ -11,7 +11,7 @@ export class CalculatorSceneManager extends BaseScriptComponent {
         this.setupCallbacks();
         setTimeout(() => {
             this.mainAudioLoop.play(-1 /* forever */);
-        }, 10000);
+        }, 15000);
         
     }
     
