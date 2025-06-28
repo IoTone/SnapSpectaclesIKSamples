@@ -192,7 +192,10 @@ export class CirclePlotRenderInfo extends BaseScriptComponent {
             // print(`solved = ${solved}`);
             // TODO: reposition the text to be above the plane
             // this.functionText.text = `${normal2.x.toFixed(2)}x+${normal2.y.toFixed(2)}y+${normal2.z.toFixed(2)}z=${solved.toFixed(2)}`;
-            
+            this.vector1Parens.enabled = true;
+            this.vector2Parens.enabled = true;
+            this.vector1Text.enabled = true;
+            this.vector2Text.enabled = true;
             this.functionText.text = `r=        +λ`;
             this.vector1Text.text = `${worldverts[3].x.toFixed(2)}\n${worldverts[3].y.toFixed(2)}\n${worldverts[3].z.toFixed(2)}`;
             this.vector2Text.text = `${normal2.x.toFixed(2)}\n${normal2.y.toFixed(2)}\n${normal2.z.toFixed(2)}`;
