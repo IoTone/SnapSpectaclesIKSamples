@@ -1,30 +1,30 @@
 - !<AssetImportMetadata/579a1f23-c253-4464-a4be-55150d7b5cc7>
-  ImporterSettings: !<AssetImporterSettings>
-    {}
   ImportedAssetIds:
     TypeScriptAsset: !<reference> 3ad001d8-1e29-46e7-9cc8-d7f0e9bc2335
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> 3ad001d8-1e29-46e7-9cc8-d7f0e9bc2335
   PackageType: NotAPackage
-  AssetDataMap:
-    TypeScriptAsset: !<own> 4839bcc9-7067-4d2c-b2f0-78649295e672
-  PackagePolicy: CannotBeUnpacked
-  DependentFiles:
-    []
-  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+  LegacyPackagePolicy: ~
   ExtraData:
     {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 4839bcc9-7067-4d2c-b2f0-78649295e672
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<TypeScriptAssetData/4839bcc9-7067-4d2c-b2f0-78649295e672>
-  Icon: ""
+  SvgIcon: ""
+  SetupScript:
+    code: ""
   Description: ""
-  InternalVersion: 0
   VersionMajor: 0
   VersionMinor: 0
   VersionPatch: 0
   ComponentUid: ffc32196-42da-45b6-a2d8-6e9155a6d4c9
   ExportUid: 00000000-0000-0000-0000-000000000000
-  CurrentVisibility: Editable
-  MaxVisibility: Editable
+  PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
     _maxValue: false
     _minValue: false
@@ -52,14 +52,21 @@
     toggleDuration: false
   ScriptTypesHidden:
     {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
   DefaultScriptInputs:
-    - startValue: 0.500000
+    - _minValue: !<float> 0.000000
+      _maxValue: !<float> 1.000000
+      startValue: 0.500000
       stepBehavior: false
+      _stepSize: !<float> 0.000000
+      toggleDuration: 0.200000
       sliderMin: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       sliderMax: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
-      _minValue: !<float> 0.000000
-      _maxValue: !<float> 1.000000
-      _stepSize: !<float> 0.000000
       _sliderKnob: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
       editEventCallbacks: false
       customFunctionForOnHoverEnter: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
@@ -83,7 +90,6 @@
       customFunctionForOnMaxValueReached: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       onMaxValueReachedFunctionNames: !<string[]>
         []
-      toggleDuration: 0.200000
   ScriptTypes:
     -
       {}
@@ -128,5 +134,3 @@
     - '// @input Component.ScriptComponent customFunctionForOnMaxValueReached {"hint":"The script containing functions to be called on max value reached"}'
     - '// @input string[] onMaxValueReachedFunctionNames = {} {"hint":"The names for the functions on the provided script, to be called when maximum value is reached"}'
     - '// @ui {"widget":"group_end"}'
-  SvgIcon: ""
-  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000

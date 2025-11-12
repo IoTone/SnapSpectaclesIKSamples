@@ -1,0 +1,37 @@
+- !<NativePackageDescriptor/6cc91d1c-ba45-4cf2-afe4-5a17d1d139fd>
+  PackagePath: ""
+  StudioVersion:
+    major: 5
+    minor: 15
+    patch: 1
+    build: 25102815
+    type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
+  Description: Mark the Monster Mark the Monster 3D model from the Marker template. Click here to learn on Place Your Object in World Click here to learn more about Marker Template
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  VersionMajor: 1
+  VersionMinor: 0
+  VersionPatch: 0
+  UpdateCheckpoint: 76
+  ExportUid: 350e9e78-17d7-42b5-8b9d-d263e2aad369
+  ComponentUid: 47b9c960-e27a-47c4-82d8-e0db2373c556
+  PackagePolicy: CanBeUnpackedTransparent
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
+  AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
+    Name: ""
+    AssetId: ""
+    Hash: ""
+    Version:
+      major: 0
+      minor: 0
+      patch: 0
+      build: 0

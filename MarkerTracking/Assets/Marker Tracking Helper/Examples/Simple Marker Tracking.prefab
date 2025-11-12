@@ -6,15 +6,20 @@
   RetainAssets: true
 - !<SceneObject/2f89302a-c781-46ea-bed5-587178749ac5>
   PrefabRemaps:
-    []
+    - 2f89302a-c781-46ea-bed5-587178749ac5: 2f89302a-c781-46ea-412a-a78e878b653a
+    - 4b558541-43b7-4a1f-947d-caf3af2047e5: 4b558541-43b7-4a1f-6b82-350c50dfb81a
+    - 75944679-4052-4eb4-bfb6-0cf9d2f4a639: 75944679-4052-4eb4-4049-f3062d0b59c6
+    - bed20169-f235-42d8-afd8-bc70ccec15d3: bed20169-f235-42d8-5027-438f3313ea2c
+    - c445f651-45ab-413a-91b2-9f9117b16b51: c445f651-45ab-413a-6e4d-606ee84e94ae
+    - f24bdfe5-424f-45bf-b079-b86ed51bb9f3: f24bdfe5-424f-45bf-4f86-47912ae4460c
   Name: Simple Marker Tracking
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> f24bdfe5-424f-45bf-b079-b86ed51bb9f3
   Components:
@@ -45,11 +50,11 @@
   Name: Box
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 5.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 5.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -82,11 +87,11 @@
   Name: Image Tracking
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> 75944679-4052-4eb4-bfb6-0cf9d2f4a639
   Components:

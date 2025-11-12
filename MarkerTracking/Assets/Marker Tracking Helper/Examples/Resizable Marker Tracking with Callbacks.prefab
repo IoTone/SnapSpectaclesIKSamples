@@ -10,26 +10,33 @@
   Name: MarkerCallback
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
     - !<own> dc3060e9-5363-4ec4-aaa5-8ba90dfa9a77
 - !<SceneObject/27bbf1ce-7988-478c-ac93-ed910d55cb1f>
   PrefabRemaps:
-    []
+    - 03850aa5-bbb6-4bb2-b82d-4864f4590118: 03850aa5-bbb6-4bb2-47d2-b79b0ba6fee7
+    - 27bbf1ce-7988-478c-ac93-ed910d55cb1f: 27bbf1ce-7988-478c-536c-126ef2aa34e0
+    - 4e5237fa-0165-4019-8d5c-0c3731901675: 4e5237fa-0165-4019-72a3-f3c8ce6fe98a
+    - 5be5e093-9111-440f-90c7-8bfd5d35fa76: 5be5e093-9111-440f-6f38-7402a2ca0589
+    - 6fc817bb-6c6c-4cdd-a6c8-c94f5e4f2d59: 6fc817bb-6c6c-4cdd-5937-36b0a1b0d2a6
+    - 825095d5-1bcb-48d8-8ac8-ddfdccb8e3be: 825095d5-1bcb-48d8-7537-220233471c41
+    - dc3060e9-5363-4ec4-aaa5-8ba90dfa9a77: dc3060e9-5363-4ec4-555a-7456f2056588
+    - ff67ca0c-65dc-4c21-8250-7d766899c700: ff67ca0c-65dc-4c21-7daf-8289976638ff
   Name: Resizable Marker Tracking with Callbacks
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> ff67ca0c-65dc-4c21-8250-7d766899c700
     - !<own> 03850aa5-bbb6-4bb2-b82d-4864f4590118
@@ -66,11 +73,11 @@
   Name: Image
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 29.280960, y: 29.280960, z: 29.280960}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 29.280960, y: 29.280960, z: 29.280960}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -121,11 +128,11 @@
   Name: Image Tracking
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> 6fc817bb-6c6c-4cdd-a6c8-c94f5e4f2d59
   Components:

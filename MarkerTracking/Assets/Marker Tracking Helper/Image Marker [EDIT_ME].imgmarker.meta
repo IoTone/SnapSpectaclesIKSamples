@@ -4,7 +4,7 @@
   ImporterName: ImageMarkerImporter
   PrimaryAsset: !<reference> de4bb9d9-dad4-4b9d-b0c0-b67a46ad93f9
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
   ExtraData:
     {}
   AssetDataMap:

@@ -10,11 +10,11 @@
   Name: Candy Cane
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: -13.754242, y: 0.000000, z: 0.766213}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: -13.754242, y: 0.000000, z: 0.766213}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -26,11 +26,11 @@
   Name: Tree
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> c0e49597-ddf1-4924-b935-2e05150a1061
   Components:
@@ -138,15 +138,32 @@
     {}
 - !<SceneObject/849290ea-8645-49c3-b10b-ddae9a411be6>
   PrefabRemaps:
-    []
+    - 1d6df867-612f-4531-86db-e427ca1eb0e0: 1d6df867-612f-4531-7924-1bd835e14f1f
+    - 244b2238-c809-4c8f-9ea5-48a2927049c6: 244b2238-c809-4c8f-615a-b75d6d8fb639
+    - 3ace72ba-b140-4bcd-8cf0-4c063ba57805: 3ace72ba-b140-4bcd-730f-b3f9c45a87fa
+    - 5a9fd2f0-1fe5-491e-ac16-16ae7ab5dd3d: 5a9fd2f0-1fe5-491e-53e9-e951854a22c2
+    - 5d679335-f07d-453f-b257-af2356426dc0: 5d679335-f07d-453f-4da8-50dca9bd923f
+    - 699a4e06-2a9f-4c92-8257-3731fde6195a: 699a4e06-2a9f-4c92-7da8-c8ce0219e6a5
+    - 6be81017-5f8d-4a8c-996e-39aff4ba5cbd: 6be81017-5f8d-4a8c-6691-c6500b45a342
+    - 849290ea-8645-49c3-b10b-ddae9a411be6: 849290ea-8645-49c3-4ef4-225165bee419
+    - 8e5c1975-ba7e-433e-9804-585c898f972b: 8e5c1975-ba7e-433e-67fb-a7a3767068d4
+    - 90f46da6-9809-4a17-ad3a-bddb0475b6b8: 90f46da6-9809-4a17-52c5-4224fb8a4947
+    - b72886ea-a96a-421e-a7e6-f1978c31b4e3: b72886ea-a96a-421e-5819-0e6873ce4b1c
+    - b8f5ba11-56f9-4b35-b3cd-f52a4c0b1c09: b8f5ba11-56f9-4b35-4c32-0ad5b3f4e3f6
+    - befc09d7-ac50-473c-85f0-0fd5d57abc5d: befc09d7-ac50-473c-7a0f-f02a2a8543a2
+    - c0e49597-ddf1-4924-b935-2e05150a1061: c0e49597-ddf1-4924-46ca-d1faeaf5ef9e
+    - c154e6ec-5f02-4a2d-8596-e6267187215a: c154e6ec-5f02-4a2d-7a69-19d98e78dea5
+    - c728e4c8-e075-4697-b3fa-b148cc37b060: c728e4c8-e075-4697-4c05-4eb733c84f9f
+    - d48bb04b-3c0f-418c-b2f2-0957ae9768c1: d48bb04b-3c0f-418c-4d0d-f6a85168973e
+    - e7dc76c6-e128-4de5-b783-d1bc5d39bf41: e7dc76c6-e128-4de5-487c-2e43a2c640be
   Name: Extended Image Tracking
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> befc09d7-ac50-473c-85f0-0fd5d57abc5d
   Components:
@@ -163,11 +180,11 @@
   Name: Bauble
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: -8.059273, y: 1.214605, z: 7.425833}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.391532, y: 1.391533, z: 1.391533}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: -8.059273, y: 1.214605, z: 7.425833}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.391532, y: 1.391533, z: 1.391533}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -216,11 +233,11 @@
   Name: Maker Tracking
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> 244b2238-c809-4c8f-9ea5-48a2927049c6
     - !<own> d48bb04b-3c0f-418c-b2f2-0957ae9768c1
@@ -234,11 +251,11 @@
   Name: Star
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: -0.000000, y: 0.063762, z: 5.099836}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 0.766690, y: 0.766690, z: 0.766690}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.000000, y: 0.063762, z: 5.099836}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 0.766690, y: 0.766690, z: 0.766690}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -289,11 +306,11 @@
   Name: Gift Box
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 18.118460, y: 0.000000, z: 0.295171}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 3.225971, y: 3.225971, z: 3.225971}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 18.118460, y: 0.000000, z: 0.295171}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 3.225971, y: 3.225971, z: 3.225971}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:

@@ -157,5 +157,3 @@
       typeIdx: 5
       value: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   Pass: !<reference> aa340f8a-cb96-46be-bc04-5c0996c08e85
-  RTCaster: false
-  RTReceiver: false

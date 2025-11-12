@@ -4,7 +4,7 @@
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> 820a55ed-a64e-4aa8-8583-b2683cae36c1
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
   ExtraData:
     {}
   AssetDataMap:
@@ -14,7 +14,22 @@
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<RenderMeshVisual/60bbc7b2-a051-4c3c-811a-86a36180c650>
+- !<SceneObject/2f89302a-c781-46ea-412a-a78e878b653a>
+  PrefabRemaps:
+    []
+  Name: Simple Marker Tracking
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> f24bdfe5-424f-45bf-4f86-47912ae4460c
+  Components:
+    - !<own> bed20169-f235-42d8-5027-438f3313ea2c
+- !<RenderMeshVisual/4b558541-43b7-4a1f-6b82-350c50dfb81a>
   PrefabRemaps:
     []
   Name: Render Mesh Visual
@@ -34,52 +49,22 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<SceneObject/94a0a1df-fec5-41f9-b77f-97cb7f56eabc>
-  PrefabRemaps:
-    []
-  Name: Image Tracking
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> c5ff39a8-549f-4a19-a9e8-6780a509609e
-  Components:
-    - !<own> ed4c0688-a836-4920-bbb7-d481abfe7b7e
-- !<SceneObject/9d50232b-47eb-417a-beba-1a56544f35c3>
-  PrefabRemaps:
-    []
-  Name: Simple Marker Tracking
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    - !<own> 94a0a1df-fec5-41f9-b77f-97cb7f56eabc
-  Components:
-    - !<own> d0d7a7ee-cbee-4841-8ef2-e5339bfd01ae
-- !<SceneObject/c5ff39a8-549f-4a19-a9e8-6780a509609e>
+- !<SceneObject/75944679-4052-4eb4-4049-f3062d0b59c6>
   PrefabRemaps:
     []
   Name: Box
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 5.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 10.000000, y: 10.000000, z: 10.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 5.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 10.000000, y: 10.000000, z: 10.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
-    - !<own> 60bbc7b2-a051-4c3c-811a-86a36180c650
-- !<ScriptComponent/d0d7a7ee-cbee-4841-8ef2-e5339bfd01ae>
+    - !<own> 4b558541-43b7-4a1f-6b82-350c50dfb81a
+- !<ScriptComponent/bed20169-f235-42d8-5027-438f3313ea2c>
   PrefabRemaps:
     []
   Name: SimpleImageTracking
@@ -95,25 +80,29 @@
   ScriptTypes:
     "":
       {}
-- !<ObjectPrefab/df8fa0ae-6920-4cc5-982b-153a03ee7458>
-  PackagePath: ""
-  objects:
-    - !<own> 9d50232b-47eb-417a-beba-1a56544f35c3
-  LazyLoading: false
-  RetainAssets: true
-- !<MarkerTrackingComponent/ed4c0688-a836-4920-bbb7-d481abfe7b7e>
+- !<MarkerTrackingComponent/c445f651-45ab-413a-6e4d-606ee84e94ae>
   PrefabRemaps:
     []
   Name: Marker Tracking
   Enabled: true
   Marker: !<reference> de4bb9d9-dad4-4b9d-b0c0-b67a46ad93f9
+- !<SceneObject/f24bdfe5-424f-45bf-4f86-47912ae4460c>
+  PrefabRemaps:
+    []
+  Name: Image Tracking
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 75944679-4052-4eb4-4049-f3062d0b59c6
+  Components:
+    - !<own> c445f651-45ab-413a-6e4d-606ee84e94ae
 - !<ObjectPrefabAssetData/f8adc933-85ef-491b-a9ed-ab2df307fae2>
-  SourceRemaps:
-    - 2f89302a-c781-46ea-bed5-587178749ac5: 9d50232b-47eb-417a-beba-1a56544f35c3
-    - 4b558541-43b7-4a1f-947d-caf3af2047e5: 60bbc7b2-a051-4c3c-811a-86a36180c650
-    - 75944679-4052-4eb4-bfb6-0cf9d2f4a639: c5ff39a8-549f-4a19-a9e8-6780a509609e
-    - 820a55ed-a64e-4aa8-8583-b2683cae36c1: df8fa0ae-6920-4cc5-982b-153a03ee7458
-    - bed20169-f235-42d8-afd8-bc70ccec15d3: d0d7a7ee-cbee-4841-8ef2-e5339bfd01ae
-    - c445f651-45ab-413a-91b2-9f9117b16b51: ed4c0688-a836-4920-bbb7-d481abfe7b7e
-    - f24bdfe5-424f-45bf-b079-b86ed51bb9f3: 94a0a1df-fec5-41f9-b77f-97cb7f56eabc
-  SourceState: !<own> df8fa0ae-6920-4cc5-982b-153a03ee7458
+  Prototype: !<ObjectOwner/40ef9e20-e563-4c90-901b-e8dfb7d3782a>
+    PackagePath: ""
+    objects:
+      - !<own> 2f89302a-c781-46ea-412a-a78e878b653a

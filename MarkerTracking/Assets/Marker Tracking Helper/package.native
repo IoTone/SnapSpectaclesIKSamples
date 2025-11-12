@@ -2,10 +2,13 @@
   PackagePath: ""
   StudioVersion:
     major: 5
-    minor: 7
-    patch: 2
-    build: 25030805
+    minor: 15
+    patch: 1
+    build: 25102815
     type: Unset
+    buildFlavor: ""
+    timestamp: 0
+    commit: ""
   Description: |-
     Marker Tracking Helper
     
@@ -15,15 +18,20 @@
     - Ensure the main camera exist in the scene before dragging in an example
     - For Extended Marker Tracking Example, ensure the main camera has a Device Tracking Component with tracking mode set to World
   SvgIcon: ""
-  InternalVersion: 1
+  SetupScript:
+    code: ""
   VersionMajor: 0
   VersionMinor: 9
   VersionPatch: 0
-  UpdateCheckpoint: 55
+  UpdateCheckpoint: 76
   ExportUid: 84a5bd50-dd07-4732-b655-2dbea827fb95
   ComponentUid: 3aefa5e2-fecc-41e1-86b3-0b9a35f9fde0
-  CurrentVisibility: Editable
-  MaxVisibility: Editable
+  PackagePolicy: ShouldBeUnpacked
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
   Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
   AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
     Name: Marker Tracking Helper

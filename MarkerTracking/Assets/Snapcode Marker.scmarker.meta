@@ -4,7 +4,7 @@
   ImporterName: SnapcodeMarkerImporter
   PrimaryAsset: !<reference> 65ef903f-4814-4d73-a700-1ff3fd9f2511
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
   ExtraData:
     {}
   AssetDataMap:
