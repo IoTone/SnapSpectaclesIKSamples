@@ -1,7 +1,13 @@
 import {Interactable} from "SpectaclesInteractionKit.lspkg/Components/Interaction/Interactable/Interactable"
 import {PinchButton} from "SpectaclesInteractionKit.lspkg/Components/UI/PinchButton/PinchButton"
+import {ContainerFrame} from "SpectaclesInteractionKit.lspkg/Components/UI/ContainerFrame/ContainerFrame"
 
-
+export enum LoginStatusCode {
+    Success = 0x00, 
+    NotLoggedIn = 0x10,
+    AuthenticationFailure  = 0x11,
+    UnspecifiedError = 0x80
+}
 
 @component
 export class NewScript extends BaseScriptComponent {
@@ -31,11 +37,14 @@ export class NewScript extends BaseScriptComponent {
     backspcButtonCapsule!: PinchButton
     @input
     passwordTextHidden!: Text;
-
+    @input
+    loginPanel: ContainerFrame;
     private passwordData : Array<Number> = [];
     private timeoutInterval: DelayedCallbackEvent | null = null
     private configPasswordRequiredLength = 3;
-
+    private loginStatus = LoginStatusCode.NotLoggedIn;
+    // TODO: implement a session model
+    
     onAwake() {
         print("onAwake()");
         
@@ -357,6 +366,16 @@ export class NewScript extends BaseScriptComponent {
         );
     }
 
+    //
+    // Accessors
+    //
+    getLoginStatus = (): LoginStatusCode => {
+        return this.loginStatus;
+    }
+
+    //
+    // Private
+    //
     private checkPassword = (): void => {
         // Password is hardcoded
         // XXX Refactor
@@ -365,9 +384,11 @@ export class NewScript extends BaseScriptComponent {
         let localPassword= [1,2,3];
         if (this.passwordData.length === localPassword.length && this.passwordData.every((value, index) => value === localPassword[index])) {
             print("Passwords match");
-            this.enabled = false;
+            this.loginStatus = LoginStatusCode.Success;
+            this.loginPanel.getSceneObject().enabled = false;
         } else {
             this.passwordTextHidden.text = "Incorrect PIN";
+            this.loginStatus = LoginStatusCode.AuthenticationFailure;
         }
     }
 }

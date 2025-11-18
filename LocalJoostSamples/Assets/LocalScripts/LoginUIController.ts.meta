@@ -31,6 +31,7 @@
     eightButtonCapsule: false
     fiveButtonCapsule: false
     fourButtonCapsule: false
+    loginPanel: false
     nineButtonCapsule: false
     oneButtonCapsule: false
     passwordTextHidden: false
@@ -61,6 +62,7 @@
       clearButtonCapsule: !<MappingBased.AssignableType_10> 00000000-0000-0000-0000-000000000000
       backspcButtonCapsule: !<MappingBased.AssignableType_11> 00000000-0000-0000-0000-000000000000
       passwordTextHidden: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      loginPanel: !<MappingBased.AssignableType_12> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -78,3 +80,4 @@
     - // @input AssignableType_10 clearButtonCapsule
     - // @input AssignableType_11 backspcButtonCapsule
     - // @input Component.Text passwordTextHidden
+    - // @input AssignableType_12 loginPanel

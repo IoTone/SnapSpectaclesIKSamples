@@ -3332,8 +3332,9 @@
       nineButtonCapsule: !<MappingBased.AssignableType_8> 700eaed6-325c-4c6d-91f2-4ad5df441389
       zeroButtonCapsule: !<MappingBased.AssignableType_9> 8389fc60-a79b-4b19-a288-0d9bcd0b41ff
       clearButtonCapsule: !<MappingBased.AssignableType_10> 199c1e1b-0588-4d8f-afb9-c69162687eb6
-      backspcButtonCapsule: !<MappingBased.AssignableType_11> 199c1e1b-0588-4d8f-afb9-c69162687eb6
+      backspcButtonCapsule: !<MappingBased.AssignableType_11> f134c180-1e91-4d44-b737-5b9c470c1b7c
       passwordTextHidden: !<reference.Text> b4f09e22-afb2-4a30-af7f-bd10c1ea2648
+      loginPanel: !<MappingBased.AssignableType_12> a54ca6b6-98c3-4281-8d1c-a3a645c18d18
   ScriptTypes:
     "":
       {}
@@ -15963,7 +15964,7 @@
   MeshShadowMode: None
   ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
   ShadowDensity: 1.000000
-  Text: 0
+  Text: ""
   Editable: false
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
