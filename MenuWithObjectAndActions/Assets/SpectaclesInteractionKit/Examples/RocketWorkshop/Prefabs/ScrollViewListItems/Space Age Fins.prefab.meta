@@ -1,19 +1,19 @@
 - !<AssetImportMetadata/418f445f-3631-4879-a09e-9c38c471b519>
-  ImporterSettings: !<AssetImporterSettings/0ec32497-be26-4199-ac91-24c5ee3ce4c3>
-    {}
   ImportedAssetIds:
     ObjectPrefab: !<reference> dbb1f943-cd3e-4b20-89e5-0ce41c98a705
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> dbb1f943-cd3e-4b20-89e5-0ce41c98a705
   PackageType: NotAPackage
-  AssetDataMap:
-    ObjectPrefab: !<own> 1b3f8a90-88cd-4e26-81ff-27976c9f1a40
   PackagePolicy: CannotBeUnpacked
-  DependentFiles:
-    []
-  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
   ExtraData:
     {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 1b3f8a90-88cd-4e26-81ff-27976c9f1a40
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<BodyComponent/00cc2e56-2408-4dbd-a827-5d090db347eb>
   PrefabRemaps:
     []
@@ -138,6 +138,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -145,6 +146,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -244,7 +246,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScreenTransform/55fda77f-9a41-45b7-a6a4-2fd33f00b9fd>
@@ -289,6 +290,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -296,6 +298,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -422,10 +425,8 @@
     - !<reference> 409f5a96-3322-429c-8a4b-43d6f203c994
   FlipX: false
   FlipY: false
+  RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
-  Size:
-    x: !<float> 1.000000
-    y: !<float> 1.000000
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<Image/7eb656dd-74c7-49d4-8f51-6b3251da76e1>
   PrefabRemaps:
@@ -443,10 +444,8 @@
     - !<reference> 9228366b-7f28-4dcb-b005-ced91bac69fa
   FlipX: false
   FlipY: false
+  RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
-  Size:
-    x: !<float> 1.000000
-    y: !<float> 1.000000
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScriptComponent/80309eb4-229b-4832-afc4-199ff90ea9f2>
   PrefabRemaps:
@@ -664,7 +663,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/b9c7dddd-d3fa-4c8b-85be-f8135839fb88>

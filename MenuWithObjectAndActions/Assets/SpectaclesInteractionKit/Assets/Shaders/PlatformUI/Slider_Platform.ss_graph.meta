@@ -5,12 +5,12 @@
   PrimaryAsset: !<reference> 1fc0b4e0-d98d-4292-b562-e490cf8dd56c
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
   AssetDataMap:
     {}
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/2cc9b2b4-712c-43d7-87f5-0f10ec9e6591>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-  ExtraData:
-    {}

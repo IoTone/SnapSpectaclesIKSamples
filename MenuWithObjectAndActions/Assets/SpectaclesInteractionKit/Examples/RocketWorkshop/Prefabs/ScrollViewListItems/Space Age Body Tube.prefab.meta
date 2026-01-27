@@ -1,19 +1,19 @@
 - !<AssetImportMetadata/0ba4abe0-dfcc-44cb-93f7-497284b3a729>
-  ImporterSettings: !<AssetImporterSettings/0f654fdc-080d-41ee-8399-d0bfc213da88>
-    {}
   ImportedAssetIds:
     ObjectPrefab: !<reference> 76789411-9f7c-4352-84bb-6a762a706580
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> 76789411-9f7c-4352-84bb-6a762a706580
   PackageType: NotAPackage
-  AssetDataMap:
-    ObjectPrefab: !<own> e16d868b-888d-4476-95d0-4d79ff900fde
   PackagePolicy: CannotBeUnpacked
-  DependentFiles:
-    []
-  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
   ExtraData:
     {}
+  AssetDataMap:
+    ObjectPrefab: !<own> e16d868b-888d-4476-95d0-4d79ff900fde
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/0e127245-bbb7-4430-9b23-a12c83a7a0bd>
   PrefabRemaps:
     []
@@ -236,7 +236,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScreenTransform/58c447aa-2486-4f1e-97cf-a9a35362709c>
@@ -288,10 +287,8 @@
     - !<reference> 409f5a96-3322-429c-8a4b-43d6f203c994
   FlipX: false
   FlipY: false
+  RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
-  Size:
-    x: !<float> 1.000000
-    y: !<float> 1.000000
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/64d6c337-9a6e-4e5d-8026-36706e419f0f>
   PrefabRemaps:
@@ -487,10 +484,8 @@
     - !<reference> bbbccf8e-d1a1-4580-8348-cc52637c5249
   FlipX: false
   FlipY: false
+  RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
-  Size:
-    x: !<float> 1.000000
-    y: !<float> 1.000000
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScriptComponent/b9df867f-daec-4065-a472-c9a3bae7496c>
   PrefabRemaps:
@@ -519,6 +514,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -526,6 +522,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -710,6 +707,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -717,6 +715,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -795,7 +794,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScreenTransform/fe61bbe8-404b-45cc-a905-c515b4e280d6>

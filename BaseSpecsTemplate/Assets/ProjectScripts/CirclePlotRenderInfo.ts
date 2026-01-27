@@ -24,12 +24,34 @@ export class CirclePlotRenderInfo extends BaseScriptComponent {
     public vector1Text: Text;
     
     @input
+    @hint("Choose a Vector Component Text Scene Object")
+    public operation1Text: Text;
+    
+    @input
     @hint("Choose a Vector Parens Text Scene Object")
     public vector2Parens: Text;
     
     @input
     @hint("Choose a Vector Component Text Scene Object")
     public vector2Text: Text;
+    
+    @input
+    @hint("Choose a Vector Component Text Scene Object")
+    public operation2Text: Text;
+    
+    @input
+    @hint("Choose a Vector Parens Text Scene Object")
+    public vectorOCParens: Text;
+    
+    @input
+    @hint("Choose a Vector Component Text Scene Object")
+    public vectorOCText: Text;
+    
+    @input
+    @hint("Choose a Vector Brackets Text Scene Object")
+    public vectorBrackets: Text;
+    
+    private centerPos: vec3;
     
     onAwake() {
         this.createEvent("OnStartEvent").bind(() => {
@@ -122,7 +144,8 @@ export class CirclePlotRenderInfo extends BaseScriptComponent {
             );
             
             // Get the radius info
-            let circRadius =  this.interactableCircle.radius;
+            let R =  this.interactableCircle.radius;
+            // this.transform = sceneObject.getTransform();
             
             
             // Extract vertex positions using attribute "position"
@@ -179,13 +202,26 @@ export class CirclePlotRenderInfo extends BaseScriptComponent {
                 worldverts.push(worldPos);
                 print(`Corner ${i}: (${worldPos.x}, ${worldPos.y}, ${worldPos.z})`);
             }
-             // compute from 3 points
+            
+            let centerTransform = this.interactableCircle.centerObject.getTransform();
+            this.centerPos = centerTransform.getWorldPosition();
+            let OC = this.centerPos;
+            let A = worldverts[0];
+            let B = worldverts[3];
+            let CA = this.centerPos.sub(A);
+            let CB = this.centerPos.sub(B);
+            let CAdivR = new vec3(A.x/R, A.y/R, A.z/3);
+            let normal = CA.cross(CA.cross(CB));
+            let nlength = Math.sqrt(Math.pow(normal.x, 2) + Math.pow(normal.y, 2) + Math.pow(normal.z, 2));
+            let ndivnlength = new vec3(normal.x/nlength, normal.y/nlength, normal.z/nlength);
+            
+            print(`new normal (${normal.x.toFixed(2)}, ${normal.y.toFixed(2)}, ${normal.z.toFixed(2)})`);
+            print(`new ndivnlength (${ndivnlength.x.toFixed(2)}, ${ndivnlength.y.toFixed(2)}, ${ndivnlength.z.toFixed(2)})`);
             
             
-            // const normal = this.normalOfPlane(worldverts);
-            const normal2 = this.computeNormalFromVertices(worldverts[0], worldverts[1], worldverts[2]);
+            // const normal2 = this.computeNormalFromVertices(worldverts[0], worldverts[1], worldverts[2]);
             // print(`new normal (${normal.x.toFixed(2)}, ${normal.y.toFixed(2)}, ${normal.z.toFixed(2)})`);
-            print(`new normal2 (${normal2.x.toFixed(2)}, ${normal2.y.toFixed(2)}, ${normal2.z.toFixed(2)})`);
+            // print(`new normal2 (${normal2.x.toFixed(2)}, ${normal2.y.toFixed(2)}, ${normal2.z.toFixed(2)})`);
                      
             
             // const solved = this.solveForValueOfAPlane(normal2, worldverts[3]);
@@ -194,11 +230,17 @@ export class CirclePlotRenderInfo extends BaseScriptComponent {
             // this.functionText.text = `${normal2.x.toFixed(2)}x+${normal2.y.toFixed(2)}y+${normal2.z.toFixed(2)}z=${solved.toFixed(2)}`;
             this.vector1Parens.enabled = true;
             this.vector2Parens.enabled = true;
+            this.vectorOCParens.enabled = true;
             this.vector1Text.enabled = true;
             this.vector2Text.enabled = true;
-            this.functionText.text = `r=        +λ`;
-            this.vector1Text.text = `${worldverts[3].x.toFixed(2)}\n${worldverts[3].y.toFixed(2)}\n${worldverts[3].z.toFixed(2)}`;
-            this.vector2Text.text = `${normal2.x.toFixed(2)}\n${normal2.y.toFixed(2)}\n${normal2.z.toFixed(2)}`;
+            this.operation1Text.enabled = true;
+            this.operation2Text.enabled = true;
+            this.vectorOCText.enabled = true;
+            this.vectorBrackets.enabled = true;
+            this.functionText.text = `v=          + ${R}                `;
+            this.vectorOCText.text = `${OC.x.toFixed(2)}\n${OC.y.toFixed(2)}\n${OC.z.toFixed(2)}`;
+            this.vector1Text.text = `${CAdivR.x.toFixed(2)}\n${CAdivR.y.toFixed(2)}\n${CAdivR.z.toFixed(2)}`;
+            this.vector2Text.text = `${ndivnlength.x.toFixed(2)}\n${ndivnlength.y.toFixed(2)}\n${ndivnlength.z.toFixed(2)}`;
             /*
             if (indices && indices.length >= 6) { // >= 6 for 2 triangles
                 print(`Indices: [${indices.join(", ")}]`);

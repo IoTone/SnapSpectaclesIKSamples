@@ -4,16 +4,16 @@
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> f8de076e-14c5-4869-815e-97dfb35529e7
   PackageType: NotAPackage
-  ImporterSettings: !<AssetImporterSettings/18d2781d-18fb-4e1f-9981-35c49221a1ed>
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
     {}
   AssetDataMap:
     ObjectPrefab: !<own> d6b19b5c-56aa-439c-a1e7-b42fc1dd6fe0
-  PackagePolicy: CannotBeUnpacked
   DependentFiles:
     []
-  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-  ExtraData:
+  ImporterSettings: !<AssetImporterSettings>
     {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/0062ad6f-4a1a-4cdc-8fc1-ab49a2f34df9>
   PrefabRemaps:
     []
@@ -824,6 +824,7 @@
   ScriptAsset: !<reference> 27fb63e0-f430-409f-b812-20bc1f008d3c
   ScriptInputsDefault:
     selectVisual: true
+    handMeshRenderOrder: true
     autoJointMapping: true
     wrist: true
     thumbToWrist: true
@@ -851,15 +852,18 @@
     pinkyMidJoint: true
     pinkyUpperJoint: true
     pinkyTip: true
+    tipGlowRenderOrder: true
     occluderEnabled: true
+    gradientQuadRenderOrder: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       handType: right
       selectVisual: Default
-      handInteractor: !<MappingBased.HandInteractor> 38e72372-f5c5-4c5e-888e-003531bd745b
+      handInteractor: !<MappingBased.AssignableType> 38e72372-f5c5-4c5e-888e-003531bd745b
       handMesh: !<reference.RenderMeshVisual> 15198c7d-b87d-41f2-8a03-ebb1e502aa85
+      handMeshRenderOrder: !<float> 9999.000000
       root: !<reference.SceneObject> feac871f-6262-41f8-97ba-c15238ce8cc6
       autoJointMapping: true
       wrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
@@ -896,9 +900,11 @@
       tapProximityThreshold: !<float> 8.000000
       pinchTexture: !<reference.Texture> e0a110ae-6b49-431f-9924-e602351e9a0c
       tapTexture: !<reference.Texture> f5355afd-bcbc-4434-bcf9-9ff4c341eb87
+      tipGlowRenderOrder: !<float> 10000.000000
       occluderEnabled: false
       occluderUnitPlaneMesh: !<reference.RenderMesh> 198d4c8c-c021-43ce-a954-a22f1f606ca2
       radialGradientOcclusionMaterial: !<reference.Material> ab926f89-771c-45e0-a44c-ba4f9f57cafb
+      gradientQuadRenderOrder: !<float> 9997.000000
       handOutlineMaterial: !<reference.Material> ae367e71-ee3a-45a1-8095-d0d2321b902e
       handOccluderMaterial: !<reference.Material> 7c9de503-f8ed-4070-be89-238d9e1c76df
   ScriptTypes:
@@ -1760,6 +1766,7 @@
   ScriptAsset: !<reference> 27fb63e0-f430-409f-b812-20bc1f008d3c
   ScriptInputsDefault:
     selectVisual: true
+    handMeshRenderOrder: true
     autoJointMapping: true
     wrist: true
     thumbToWrist: true
@@ -1787,15 +1794,18 @@
     pinkyMidJoint: true
     pinkyUpperJoint: true
     pinkyTip: true
+    tipGlowRenderOrder: true
     occluderEnabled: true
+    gradientQuadRenderOrder: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       handType: left
       selectVisual: Default
-      handInteractor: !<MappingBased.HandInteractor> 2ec89c90-23ef-4d6e-8079-acecd4d75c1d
+      handInteractor: !<MappingBased.AssignableType> 2ec89c90-23ef-4d6e-8079-acecd4d75c1d
       handMesh: !<reference.RenderMeshVisual> 640f142e-9401-4452-a70a-6b84ee9fdeb7
+      handMeshRenderOrder: !<float> 9999.000000
       root: !<reference.SceneObject> f0d6b0fb-62e3-448a-87ee-f6527258390d
       autoJointMapping: true
       wrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
@@ -1832,9 +1842,11 @@
       tapProximityThreshold: !<float> 8.000000
       pinchTexture: !<reference.Texture> e0a110ae-6b49-431f-9924-e602351e9a0c
       tapTexture: !<reference.Texture> f5355afd-bcbc-4434-bcf9-9ff4c341eb87
+      tipGlowRenderOrder: !<float> 10000.000000
       occluderEnabled: false
       occluderUnitPlaneMesh: !<reference.RenderMesh> 198d4c8c-c021-43ce-a954-a22f1f606ca2
       radialGradientOcclusionMaterial: !<reference.Material> ab926f89-771c-45e0-a44c-ba4f9f57cafb
+      gradientQuadRenderOrder: !<float> 9997.000000
       handOutlineMaterial: !<reference.Material> ae367e71-ee3a-45a1-8095-d0d2321b902e
       handOccluderMaterial: !<reference.Material> f5326505-501a-4c5e-8979-15bb3dadfa0b
   ScriptTypes:

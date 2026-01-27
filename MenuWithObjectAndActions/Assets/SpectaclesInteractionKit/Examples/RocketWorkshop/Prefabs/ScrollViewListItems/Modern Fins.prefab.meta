@@ -1,19 +1,19 @@
 - !<AssetImportMetadata/365426ad-1329-45d7-bd61-b534085fdfe3>
-  ImporterSettings: !<AssetImporterSettings/6ff0987c-3bbb-4bf1-a073-cb99bc5dc14e>
-    {}
   ImportedAssetIds:
     ObjectPrefab: !<reference> bbe206c8-38e1-4245-9550-2a019fe7e078
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> bbe206c8-38e1-4245-9550-2a019fe7e078
   PackageType: NotAPackage
-  AssetDataMap:
-    ObjectPrefab: !<own> 987428d5-7ddd-43b6-bdf3-81d3bdeb04e5
   PackagePolicy: CannotBeUnpacked
-  DependentFiles:
-    []
-  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
   ExtraData:
     {}
+  AssetDataMap:
+    ObjectPrefab: !<own> 987428d5-7ddd-43b6-bdf3-81d3bdeb04e5
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<ScreenTransform/04337581-50e2-4ee9-8ed1-2f0e3d79ca1f>
   PrefabRemaps:
     []
@@ -226,7 +226,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/5ebc3e80-41f0-45b8-b781-0073e56d60e4>
@@ -238,6 +237,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -245,6 +245,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -265,10 +266,8 @@
     - !<reference> d87d9ccc-b812-4ed4-b736-0d6b370151fc
   FlipX: false
   FlipY: false
+  RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
-  Size:
-    x: !<float> 1.000000
-    y: !<float> 1.000000
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScriptComponent/6a5042d9-eed1-4eaf-8d17-183b69fd366b>
   PrefabRemaps:
@@ -370,6 +369,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -377,6 +377,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -630,7 +631,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/d2986312-30ce-414e-858c-ef9f13ea934d>
@@ -775,10 +775,8 @@
     - !<reference> 409f5a96-3322-429c-8a4b-43d6f203c994
   FlipX: false
   FlipY: false
+  RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
-  Size:
-    x: !<float> 1.000000
-    y: !<float> 1.000000
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScriptComponent/f7452aaf-1ba9-479a-9664-5cbfe99580e3>
   PrefabRemaps:

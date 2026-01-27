@@ -44,9 +44,9 @@
     "":
       autoStop: false
       lookDownIndicator: !<reference.SceneObject> 8e1afe28-f67f-4e34-b055-2fb423f6bca9
-      locationDisplayer: !<reference.SceneObject> 799fc005-7fdf-4b80-9ae6-17b7c240e197
+      locationDisplayer: !<reference.SceneObject> eae42704-7f72-4323-a8fa-2fd5d23291e8
       interactable: !<MappingBased.AssignableType> be801c8b-eb4f-4454-bcef-045bf28e6472
-      worldMesh: !<reference.RenderMeshVisual> d804f914-11fc-4165-8aab-6338f45c154b
+      worldMesh: !<reference.RenderMeshVisual> 98167e6a-c920-4942-85e1-cb344dd12a82
   ScriptTypes:
     "":
       {}

@@ -42,6 +42,7 @@ var id = setIntervalLS(function() {
 }, 1000);
 */
 
+
 // Stop after 5 seconds
 /*
 var stopEvt = script.createEvent("DelayedCallbackEvent");
@@ -51,3 +52,7 @@ stopEvt.bind(function() {
 });
 stopEvt.delay = 5.0; // seconds
 */
+
+function log() {
+    global.textLogger.log("foo");
+}

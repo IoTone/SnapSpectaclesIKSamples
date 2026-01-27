@@ -57,6 +57,7 @@
   ScriptAsset: !<reference> 27fb63e0-f430-409f-b812-20bc1f008d3c
   ScriptInputsDefault:
     selectVisual: true
+    handMeshRenderOrder: true
     autoJointMapping: true
     wrist: true
     thumbToWrist: true
@@ -84,15 +85,18 @@
     pinkyMidJoint: true
     pinkyUpperJoint: true
     pinkyTip: true
+    tipGlowRenderOrder: true
     occluderEnabled: true
+    gradientQuadRenderOrder: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       handType: right
       selectVisual: Default
-      handInteractor: !<MappingBased.HandInteractor> d6371ebf-1d3b-4bfa-bdd8-c0a7fabf8f39
+      handInteractor: !<MappingBased.AssignableType> d6371ebf-1d3b-4bfa-bdd8-c0a7fabf8f39
       handMesh: !<reference.RenderMeshVisual> 1907c2c5-2d81-47ce-96c9-eeb579299134
+      handMeshRenderOrder: !<float> 9999.000000
       root: !<reference.SceneObject> 46a5e549-6a60-40d7-99e2-3d9ea7f5a6fa
       autoJointMapping: true
       wrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
@@ -129,9 +133,11 @@
       tapProximityThreshold: !<float> 8.000000
       pinchTexture: !<reference.Texture> e0a110ae-6b49-431f-9924-e602351e9a0c
       tapTexture: !<reference.Texture> f5355afd-bcbc-4434-bcf9-9ff4c341eb87
+      tipGlowRenderOrder: !<float> 10000.000000
       occluderEnabled: false
       occluderUnitPlaneMesh: !<reference.RenderMesh> 198d4c8c-c021-43ce-a954-a22f1f606ca2
       radialGradientOcclusionMaterial: !<reference.Material> ab926f89-771c-45e0-a44c-ba4f9f57cafb
+      gradientQuadRenderOrder: !<float> 9997.000000
       handOutlineMaterial: !<reference.Material> ae367e71-ee3a-45a1-8095-d0d2321b902e
       handOccluderMaterial: !<reference.Material> 7c9de503-f8ed-4070-be89-238d9e1c76df
   ScriptTypes:
@@ -960,6 +966,7 @@
   ScriptAsset: !<reference> 27fb63e0-f430-409f-b812-20bc1f008d3c
   ScriptInputsDefault:
     selectVisual: true
+    handMeshRenderOrder: true
     autoJointMapping: true
     wrist: true
     thumbToWrist: true
@@ -987,15 +994,18 @@
     pinkyMidJoint: true
     pinkyUpperJoint: true
     pinkyTip: true
+    tipGlowRenderOrder: true
     occluderEnabled: true
+    gradientQuadRenderOrder: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       handType: left
       selectVisual: Default
-      handInteractor: !<MappingBased.HandInteractor> b935b9b7-3c38-42b9-8045-c6609e019a8f
+      handInteractor: !<MappingBased.AssignableType> b935b9b7-3c38-42b9-8045-c6609e019a8f
       handMesh: !<reference.RenderMeshVisual> eb708bc5-ef13-451c-b7b2-46398c05d999
+      handMeshRenderOrder: !<float> 9999.000000
       root: !<reference.SceneObject> 1d1c8de5-b019-4d0a-adc6-1ad389890762
       autoJointMapping: true
       wrist: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
@@ -1032,9 +1042,11 @@
       tapProximityThreshold: !<float> 8.000000
       pinchTexture: !<reference.Texture> e0a110ae-6b49-431f-9924-e602351e9a0c
       tapTexture: !<reference.Texture> f5355afd-bcbc-4434-bcf9-9ff4c341eb87
+      tipGlowRenderOrder: !<float> 10000.000000
       occluderEnabled: false
       occluderUnitPlaneMesh: !<reference.RenderMesh> 198d4c8c-c021-43ce-a954-a22f1f606ca2
       radialGradientOcclusionMaterial: !<reference.Material> ab926f89-771c-45e0-a44c-ba4f9f57cafb
+      gradientQuadRenderOrder: !<float> 9997.000000
       handOutlineMaterial: !<reference.Material> ae367e71-ee3a-45a1-8095-d0d2321b902e
       handOccluderMaterial: !<reference.Material> f5326505-501a-4c5e-8979-15bb3dadfa0b
   ScriptTypes:

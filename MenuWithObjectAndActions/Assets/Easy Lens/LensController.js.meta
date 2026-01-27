@@ -9,11 +9,15 @@
     USE_EASY_LENS: ""
   AssetDataMap:
     JavaScriptAsset: !<own> 211828eb-af61-484e-9e56-c3f3093f6cce
-  DependentFiles: []
-  ImporterSettings: !<AssetImporterSettings/0a13c209-2d14-46e0-b944-b11714656791> {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<ScriptAssetData/211828eb-af61-484e-9e56-c3f3093f6cce>
   SvgIcon: ""
+  SetupScript:
+    code: ""
   Description: ""
   InternalVersion: 0
   VersionMajor: 0
@@ -29,7 +33,10 @@
     picture1: false
     picture2: false
     touchEvents: false
-  ScriptTypesHidden: {}
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
     - button1: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       button2: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
@@ -37,4 +44,5 @@
       picture2: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
       touchEvents: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
-    - {}
+    -
+      {}

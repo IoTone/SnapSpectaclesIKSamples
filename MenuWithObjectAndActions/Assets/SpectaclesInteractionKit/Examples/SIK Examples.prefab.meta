@@ -5,15 +5,15 @@
   PrimaryAsset: !<reference> fd1bc086-aa02-4e60-a264-3d7710070b7f
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
   AssetDataMap:
     ObjectPrefab: !<own> 7b84dd37-b48b-4715-b5da-cfdd381e906f
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/053c50d6-dbb9-49de-96ca-95699708e90b>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-  ExtraData:
-    {}
 - !<ScriptComponent/011037e6-af4e-4fe9-a05b-4f5f01d5d04e>
   PrefabRemaps:
     []
@@ -289,7 +289,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/0795c0c7-f481-4613-85a5-8d0a06d6019f>
@@ -338,6 +337,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -345,6 +345,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -446,7 +447,6 @@
     LetterSpacing: 0.050000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/0a36de73-a2c3-4095-92fe-1d3b342d1d31>
@@ -679,8 +679,7 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
-  ShadowMode: None
+  EnableBatching: false
 - !<RenderMeshVisual/0fba4b93-4ed1-4ad0-9e9a-7abd2ea2040e>
   PrefabRemaps:
     []
@@ -1008,7 +1007,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ColliderComponent/1812807d-6e0c-480c-826c-33b2f6fbf438>
@@ -1038,6 +1036,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -1045,6 +1044,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -1170,7 +1170,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/18f7410b-0c8f-4ac3-9d62-b44d0602835c>
@@ -1216,6 +1215,7 @@
   ScriptAsset: !<reference> c973d211-281b-4016-ae39-e12f3317bcae
   ScriptInputsDefault:
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -1223,6 +1223,7 @@
     "":
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -1358,6 +1359,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -1365,6 +1367,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -1463,6 +1466,7 @@
   ScriptAsset: !<reference> c973d211-281b-4016-ae39-e12f3317bcae
   ScriptInputsDefault:
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -1470,6 +1474,7 @@
     "":
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -1981,7 +1986,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScreenTransform/2b77e527-3ff0-46bc-8e03-aa0ccea0c75e>
@@ -2616,11 +2620,9 @@
     - !<reference> 1766b243-ecbd-49ab-99a0-0a126bf505c7
   FlipX: false
   FlipY: false
+  RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-  Size:
-    x: !<float> 1.000000
-    y: !<float> 1.000000
 - !<ScriptComponent/3a2fcdc8-7d8e-4198-a126-3606012bc6fa>
   PrefabRemaps:
     []
@@ -2828,6 +2830,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -2835,6 +2838,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -3022,7 +3026,6 @@
     LetterSpacing: 0.035000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/44295d20-c33c-4c89-85e3-bd064d17a272>
@@ -3155,7 +3158,6 @@
     LetterSpacing: 0.035000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScreenTransform/46d205c4-d6ea-40bf-a73d-98260489d19b>
@@ -3396,6 +3398,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -3403,6 +3406,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -3432,6 +3436,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -3439,6 +3444,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -3642,7 +3648,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScreenTransform/4fabe891-3f97-4036-ade4-b073e5f4b174>
@@ -3710,11 +3715,9 @@
     - !<reference> 4d35bac2-e858-4d9c-afa4-6f02ae7d5065
   FlipX: false
   FlipY: false
+  RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
-  Size:
-    x: !<float> 1.000000
-    y: !<float> 1.000000
 - !<ScriptComponent/517781cb-d022-45e1-8836-69a14ac377d0>
   PrefabRemaps:
     []
@@ -3814,7 +3817,6 @@
     LetterSpacing: 0.035000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/534ffe64-3597-48e9-9351-7e4d144ca467>
@@ -3879,6 +3881,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -3886,6 +3889,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -3902,16 +3906,16 @@
     {}
   ScriptInputs:
     "":
-      slider: !<MappingBased.Slider> c5e4e2f6-6a4c-4c04-bfea-f04b7efc0e39
+      slider: !<MappingBased.AssignableType> c5e4e2f6-6a4c-4c04-bfea-f04b7efc0e39
       animationAButton: !<reference.SceneObject> bf9ec558-adb7-4b56-9b86-f3af03dd7d3d
       animationBButton: !<reference.SceneObject> cd03d3c5-a16f-46ed-8a51-1f377d8f3a92
       animationCButton: !<reference.SceneObject> 268d83d8-6f2e-443f-ba85-15477ea4c95c
       launchButton: !<reference.SceneObject> e00e14e8-dc62-4125-8226-d9548ccd872f
-      rocketConf: !<MappingBased.RocketConfigurator> ce2fde66-cadc-4d86-97a4-9c45b257d536
+      rocketConf: !<MappingBased.AssignableType_1> ce2fde66-cadc-4d86-97a4-9c45b257d536
       launchSparks: !<reference.SceneObject> 6015cc18-9414-4f3b-9aa4-4283771ed4d7
       rocketAnimationPlayer: !<reference.AnimationPlayer> 55406b2c-4d46-4d85-ba95-0c9e50a1493f
       flightPathText: !<reference.Text> e5dd6f7d-966d-4ed8-bfeb-f37db6b48658
-      launchPlatformToggleButton: !<MappingBased.ToggleButton> 1bf0d431-ce81-4485-891a-20241a415173
+      launchPlatformToggleButton: !<MappingBased.AssignableType_2> 1bf0d431-ce81-4485-891a-20241a415173
       launchPlatform: !<reference.SceneObject> b3172fd7-fb4c-4a27-b922-7deb73d24d68
   ScriptTypes:
     "":
@@ -4012,6 +4016,7 @@
       PlaybackSpeed: 1.000000
       Begin: 0.000000
       End: 400.000000
+      Offset: 0.000000
       Reversed: false
       Disabled: false
       BlendMode: Default
@@ -4024,6 +4029,7 @@
       PlaybackSpeed: 1.000000
       Begin: 0.000000
       End: 420.000000
+      Offset: 0.000000
       Reversed: false
       Disabled: false
       BlendMode: Default
@@ -4036,6 +4042,7 @@
       PlaybackSpeed: 1.000000
       Begin: 0.000000
       End: 360.000000
+      Offset: 0.000000
       Reversed: false
       Disabled: false
       BlendMode: Default
@@ -4115,7 +4122,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/566655f7-3dec-46f2-85d3-0dd859b02c5d>
@@ -4291,6 +4297,7 @@
   ScriptAsset: !<reference> c973d211-281b-4016-ae39-e12f3317bcae
   ScriptInputsDefault:
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -4298,6 +4305,7 @@
     "":
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -4363,6 +4371,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -4370,6 +4379,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -4681,7 +4691,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/681a51b5-d4f8-4b50-a8a4-dfbe63d87b4e>
@@ -4692,6 +4701,7 @@
   ScriptAsset: !<reference> c973d211-281b-4016-ae39-e12f3317bcae
   ScriptInputsDefault:
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -4699,6 +4709,7 @@
     "":
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -5123,6 +5134,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -5130,6 +5142,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -5450,6 +5463,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -5457,6 +5471,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -6070,7 +6085,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<Text/7ef7df1c-9c06-4bb5-bf2a-61c117fe01dc>
@@ -6147,7 +6161,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<RenderMeshVisual/7fbf0963-2f6c-483f-b7eb-6442552159a3>
@@ -6240,6 +6253,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -6247,6 +6261,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -6750,7 +6765,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/8d20fcb2-bd25-4e36-8620-574d46a2754e>
@@ -6814,6 +6828,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -6821,6 +6836,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -6877,6 +6893,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -6884,6 +6901,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -6997,7 +7015,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/91eaf3f9-a9eb-4b59-be67-2dd6d2dd4d0a>
@@ -7105,7 +7122,6 @@
     LetterSpacing: 0.035000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScreenTransform/943996f2-d5c5-4546-8fc7-35ba7e25aafc>
@@ -7337,6 +7353,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -7344,6 +7361,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -7445,6 +7463,7 @@
   ScriptAsset: !<reference> c973d211-281b-4016-ae39-e12f3317bcae
   ScriptInputsDefault:
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -7452,6 +7471,7 @@
     "":
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -7902,7 +7922,6 @@
     LetterSpacing: 0.050000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/a867dbaf-7978-4f52-861e-8d000a4cd232>
@@ -8223,7 +8242,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<RenderMeshVisual/b1410ec4-1d45-43b9-8dc9-9027901a3bd5>
@@ -8319,6 +8337,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -8326,6 +8345,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -8403,7 +8423,7 @@
     {}
   ScriptInputs:
     "":
-      rocketConfigurator: !<MappingBased.RocketConfigurator> ce2fde66-cadc-4d86-97a4-9c45b257d536
+      rocketConfigurator: !<MappingBased.AssignableType> ce2fde66-cadc-4d86-97a4-9c45b257d536
       objectPrefabs: !<reference.ObjectPrefab[]>
         - !<reference> 8104e815-4316-48be-ad1a-2021666f989f
         - !<reference> b9b3aff4-658d-4c76-ab3d-b479d4a722c8
@@ -8639,7 +8659,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ColliderComponent/bc6e1c15-d8bb-4d4e-b694-aebd3a02d0e4>
@@ -8669,6 +8688,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -8676,6 +8696,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -9187,7 +9208,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/c86d6989-0949-4715-8b3d-23f041ce77bc>
@@ -9216,6 +9236,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -9223,6 +9244,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -9410,6 +9432,7 @@
   ScriptAsset: !<reference> c973d211-281b-4016-ae39-e12f3317bcae
   ScriptInputsDefault:
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -9417,6 +9440,7 @@
     "":
       targetingMode: !<float> 7.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -10038,7 +10062,6 @@
     LetterSpacing: 0.035000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<SceneObject/e6b9e770-e836-451c-8cc9-f030aef2ba6e>
@@ -10530,6 +10553,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -10537,6 +10561,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":

@@ -1,18 +1,23 @@
 - !<AssetImportMetadata/c549b7bf-1f23-4a0a-9759-a4aa9bf43c20>
-  ImporterSettings: !<AssetImporterSettings/da541456-6b08-4de9-b0ec-968e5655f838> {}
   ImportedAssetIds:
     TypeScriptAsset: !<reference> c973d211-281b-4016-ae39-e12f3317bcae
   ImporterName: TypeScriptAssetImporter
   PrimaryAsset: !<reference> c973d211-281b-4016-ae39-e12f3317bcae
   PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
   AssetDataMap:
     TypeScriptAsset: !<own> b37f5740-6cb3-4174-96c1-1f8acf49d165
-  PackagePolicy: CannotBeUnpacked
-  DependentFiles: []
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-  ExtraData: {}
 - !<TypeScriptAssetData/b37f5740-6cb3-4174-96c1-1f8acf49d165>
-  Icon: ""
+  SvgIcon: ""
+  SetupScript:
+    code: ""
   Description: ""
   InternalVersion: 0
   VersionMajor: 0
@@ -27,17 +32,20 @@
     enableInstantDrag: false
     isScrollable: true
     targetingMode: false
-  ScriptTypesHidden: {}
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
     - targetingMode: !<float> 3.000000
-      isScrollable: false
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
-    - {}
+    -
+      {}
   InputLines:
-    - // @input float targetingMode = 3 {"widget":"combobox", "values":[{"label":"Direct", "value":1}, {"label":"Indirect", "value":2}, {"label":"Direct/Indirect", "value":3}, {"label":"Poke", "value":4}, {"label":"All", "value":7}]}
-    - // @input bool enableInstantDrag {"hint":"Enable this to allow the Interactable to instantly be dragged on trigger rather than obeying the Interactor's drag threshold."}
+    - '// @input float targetingMode = 3 {"widget":"combobox", "values":[{"label":"Direct", "value":1}, {"label":"Indirect", "value":2}, {"label":"Direct/Indirect", "value":3}, {"label":"Poke", "value":4}, {"label":"All", "value":7}]}'
+    - "// @input bool enableInstantDrag {\"hint\":\"Enable this to allow the Interactable to instantly be dragged on trigger rather than obeying the Interactor's drag threshold.\"}"
     - // @input bool isScrollable
     - // @input bool allowMultipleInteractors = true
-  SvgIcon: ""

@@ -1,19 +1,19 @@
 - !<AssetImportMetadata/a81e537b-c104-4557-a6a4-9578f75fa8ba>
-  ImporterSettings: !<AssetImporterSettings/00b6504c-ee22-42fb-8b58-f01abb9bf60f>
-    {}
   ImportedAssetIds:
     ObjectPrefab: !<reference> 642b5216-980f-4be9-9593-16aa50bc54ca
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> 642b5216-980f-4be9-9593-16aa50bc54ca
   PackageType: NotAPackage
-  AssetDataMap:
-    ObjectPrefab: !<own> f7c39d58-4db7-45ce-b0a6-7e54d85e0216
   PackagePolicy: CannotBeUnpacked
-  DependentFiles:
-    []
-  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
   ExtraData:
     {}
+  AssetDataMap:
+    ObjectPrefab: !<own> f7c39d58-4db7-45ce-b0a6-7e54d85e0216
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
 - !<ScreenTransform/05fd22d7-8475-4776-a7e2-ba01cd4feea4>
   PrefabRemaps:
     []
@@ -63,10 +63,8 @@
     - !<reference> ef3a3d48-a46b-4cc9-a244-eaaf4e812941
   FlipX: false
   FlipY: false
+  RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
-  Size:
-    x: !<float> 1.000000
-    y: !<float> 1.000000
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<SceneObject/220a6bf5-2e25-4959-86cd-7e772e9a6969>
   PrefabRemaps:
@@ -156,10 +154,8 @@
     - !<reference> 409f5a96-3322-429c-8a4b-43d6f203c994
   FlipX: false
   FlipY: false
+  RotationAngle: 0
   Pivot: {x: 0.000000, y: 0.000000}
-  Size:
-    x: !<float> 1.000000
-    y: !<float> 1.000000
   ExtentsTarget: !<reference> 00000000-0000-0000-0000-000000000000
 - !<ScreenTransform/35b7977b-cde5-402a-9afa-06a31d48b9c7>
   PrefabRemaps:
@@ -272,6 +268,7 @@
   ScriptInputsDefault:
     targetingMode: true
     enableInstantDrag: true
+    isScrollable: true
     allowMultipleInteractors: true
   ScriptTypesDefault:
     {}
@@ -279,6 +276,7 @@
     "":
       targetingMode: !<float> 3.000000
       enableInstantDrag: false
+      isScrollable: false
       allowMultipleInteractors: true
   ScriptTypes:
     "":
@@ -357,7 +355,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScriptComponent/5c2510fa-8fcd-417b-962e-4fb66c74fe1f>
@@ -655,7 +652,6 @@
     LetterSpacing: 0.000000
     LineSpacing: 1.000000
     CapitalizationOverride: None
-    CapitilizationOverride: None
   DepthTest: false
   TwoSided: false
 - !<ScreenTransform/d9133170-c4dc-4b5f-974f-52f73b397c3c>

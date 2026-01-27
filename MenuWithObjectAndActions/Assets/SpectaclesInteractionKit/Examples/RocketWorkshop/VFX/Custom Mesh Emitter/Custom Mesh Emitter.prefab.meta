@@ -5,15 +5,15 @@
   PrimaryAsset: !<reference> c03b943f-3767-48e9-b013-bbe596ca7fef
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
   AssetDataMap:
     ObjectPrefab: !<own> f9190aff-1aac-4ba1-8e84-b7e67a784665
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/1286139f-236f-495a-b64a-f667b972b697>
+  ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-  ExtraData:
-    {}
 - !<VFXComponent/b51dc68b-5441-471f-85cb-790c527f2e0c>
   PrefabRemaps:
     []

@@ -239,5 +239,3 @@
       typeIdx: 0
       value: 0
   Pass: !<reference> c77ab7db-4342-48e5-aa2f-62bb7705b911
-  RTCaster: false
-  RTReceiver: false

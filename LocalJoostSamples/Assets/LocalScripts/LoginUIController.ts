@@ -384,9 +384,11 @@ export class NewScript extends BaseScriptComponent {
         let localPassword= [1,2,3];
         if (this.passwordData.length === localPassword.length && this.passwordData.every((value, index) => value === localPassword[index])) {
             print("Passwords match");
+            globalThis.textLogger.log("Passwords match");
             this.loginStatus = LoginStatusCode.Success;
             this.loginPanel.getSceneObject().enabled = false;
         } else {
+            globalThis.textLogger.log("Passwords do not match");
             this.passwordTextHidden.text = "Incorrect PIN";
             this.loginStatus = LoginStatusCode.AuthenticationFailure;
         }

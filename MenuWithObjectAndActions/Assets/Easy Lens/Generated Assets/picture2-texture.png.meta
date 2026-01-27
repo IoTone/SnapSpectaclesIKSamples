@@ -7,10 +7,13 @@
   PackagePolicy: CannotBeUnpacked
   ExtraData:
     USE_EASY_LENS: ""
-  AssetDataMap: {}
-  DependentFiles: []
-  ImporterSettings: !<AssetImporterSettings/0c26a878-bfc6-4172-b98c-accfcdbe091d> {}
-  CompressionSettings: !<SingleCompressionSettings/0a978c34-9164-4de8-9b22-0ea23d0aac43>
+  AssetDataMap:
+    {}
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<SingleCompressionSettings>
     CompressorName: Performance
     CompressionSettings: !<TextureCompressionMipmapSettings>
       Level: Medium

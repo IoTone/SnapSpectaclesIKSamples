@@ -31,10 +31,15 @@
     functionText: false
     interactableCircle: false
     interactableMesh: false
+    operation1Text: false
+    operation2Text: false
     vector1Parens: false
     vector1Text: false
     vector2Parens: false
     vector2Text: false
+    vectorBrackets: false
+    vectorOCParens: false
+    vectorOCText: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -45,8 +50,13 @@
       functionText: !<reference.Text> 00000000-0000-0000-0000-000000000000
       vector1Parens: !<reference.Text> 00000000-0000-0000-0000-000000000000
       vector1Text: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      operation1Text: !<reference.Text> 00000000-0000-0000-0000-000000000000
       vector2Parens: !<reference.Text> 00000000-0000-0000-0000-000000000000
       vector2Text: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      operation2Text: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      vectorOCParens: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      vectorOCText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      vectorBrackets: !<reference.Text> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -56,5 +66,10 @@
     - '// @input Component.Text functionText {"hint":"Choose a Text Scene Object"}'
     - '// @input Component.Text vector1Parens {"hint":"Choose a Vector Parens Text Scene Object"}'
     - '// @input Component.Text vector1Text {"hint":"Choose a Vector Component Text Scene Object"}'
+    - '// @input Component.Text operation1Text {"hint":"Choose a Vector Component Text Scene Object"}'
     - '// @input Component.Text vector2Parens {"hint":"Choose a Vector Parens Text Scene Object"}'
     - '// @input Component.Text vector2Text {"hint":"Choose a Vector Component Text Scene Object"}'
+    - '// @input Component.Text operation2Text {"hint":"Choose a Vector Component Text Scene Object"}'
+    - '// @input Component.Text vectorOCParens {"hint":"Choose a Vector Parens Text Scene Object"}'
+    - '// @input Component.Text vectorOCText {"hint":"Choose a Vector Component Text Scene Object"}'
+    - '// @input Component.Text vectorBrackets {"hint":"Choose a Vector Brackets Text Scene Object"}'
