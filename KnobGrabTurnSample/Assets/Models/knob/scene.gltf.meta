@@ -1,0 +1,176 @@
+- !<AssetImportMetadata/62955bc6-393f-4e97-ad51-f7f5397beb06>
+  ImportedAssetIds:
+    .hidden/Collada_visual_scene_group: !<reference> 884bb15f-5a53-4de2-8cdb-b2988d30660f
+    25f075f0839f1a56: !<reference> 4ebb6a93-dadf-4497-8d9d-2c395552c315
+    4a3e924fad0e2f27: !<reference> 8b6f85d3-16fd-4a2b-9b8e-4d14a57a4fa5
+    5456cd091e7655cc: !<reference> 469e1c41-0e07-432c-8bd8-b5162b484c75
+    66780cf3a4dcb2b8: !<reference> 94411bcf-71e7-4890-b4ce-408dfc88ecfe
+    9943cc178487d6a2: !<reference> 36568b81-01f5-4110-8ffc-c082b06c2d03
+    Materials/Collada_visual_scene_group: !<reference> 3b1fa08c-757d-4a62-a6a0-50071efab03c
+    Materials/Collada_visual_scene_group|Collada_visual_scene_group|GraphPassInfo: !<reference> 089e88f3-ae2e-4456-bb55-1b56ee96b556
+    Meshes/Object_0: !<reference> 3c70abba-70bd-47ac-8d72-c636d3f278ee
+    Scene: !<reference> 6f2f2fdb-87fc-4569-91cb-96bb4aaa97e0
+    bdb1d4d83740a47c: !<reference> edaad683-a485-44c2-a126-c296bd73dc1d
+    dfef556ddf9eb1fa: !<reference> 68173c9f-4e5d-4e5b-af1a-84fc644a8b5e
+    ff7936aad4ab157c: !<reference> e9bf38b0-8287-4ff1-9d82-d8aa3bb94304
+  ImporterName: GltfImporter
+  PrimaryAsset: !<reference> 6f2f2fdb-87fc-4569-91cb-96bb4aaa97e0
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> 0098c874-43d0-43ce-b8b3-c57835c7bd2f
+  DependentFiles:
+    - scene.bin
+  ImporterSettings: !<GltfImporterSettings>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangents: true
+    ImportMorphTargetAnimation: true
+    ConvertMetersToCentimeters: true
+    RegenerateTangents: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<SingleCompressionSettings>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+    ExtensionMappings:
+      mesh: None Compression
+    Overrides:
+      {}
+- !<ObjectPrefabAssetData/0098c874-43d0-43ce-b8b3-c57835c7bd2f>
+  Prototype: !<ObjectOwner/59b7cef0-2dd6-4e1c-9050-f1b51fd3fd2b>
+    PackagePath: ""
+    objects:
+      - !<own> 94411bcf-71e7-4890-4b31-bf7203771301
+- !<SceneObject/36568b81-01f5-4110-7003-3f7d4f93d2fc>
+  PrefabRemaps:
+    []
+  Name: Body
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 68173c9f-4e5d-4e5b-50e5-7b039bb574a1
+  Components:
+    []
+- !<SceneObject/469e1c41-0e07-432c-7427-4ae9d4b7b38a>
+  PrefabRemaps:
+    []
+  Name: Sketchfab_Scene
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> e9bf38b0-8287-4ff1-627d-2755c446bcfb
+  Components:
+    []
+- !<SceneObject/4ebb6a93-dadf-4497-7262-d3c6aaad3cea>
+  PrefabRemaps:
+    []
+  Name: Collada visual scene group
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 90.000000, y: -0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 36568b81-01f5-4110-7003-3f7d4f93d2fc
+  Components:
+    []
+- !<SceneObject/68173c9f-4e5d-4e5b-50e5-7b039bb574a1>
+  PrefabRemaps:
+    []
+  Name: Object_3
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> edaad683-a485-44c2-5ed9-3d69428c23e2
+- !<SceneObject/8b6f85d3-16fd-4a2b-6471-b2eb5a85b05a>
+  PrefabRemaps:
+    []
+  Name: Scenes
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 469e1c41-0e07-432c-7427-4ae9d4b7b38a
+  Components:
+    []
+- !<SceneObject/94411bcf-71e7-4890-4b31-bf7203771301>
+  PrefabRemaps:
+    []
+  Name: scene
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 8b6f85d3-16fd-4a2b-6471-b2eb5a85b05a
+  Components:
+    []
+- !<SceneObject/e9bf38b0-8287-4ff1-627d-2755c446bcfb>
+  PrefabRemaps:
+    []
+  Name: Sketchfab_model
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: -90.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 4ebb6a93-dadf-4497-7262-d3c6aaad3cea
+  Components:
+    []
+- !<RenderMeshVisual/edaad683-a485-44c2-5ed9-3d69428c23e2>
+  PrefabRemaps:
+    []
+  Name: Object_0
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 3b1fa08c-757d-4a62-a6a0-50071efab03c
+  Mesh: !<reference> 3c70abba-70bd-47ac-8d72-c636d3f278ee
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}

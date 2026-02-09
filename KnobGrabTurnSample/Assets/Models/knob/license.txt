@@ -1,0 +1,11 @@
+Model Information:
+* title:	Knob
+* source:	https://sketchfab.com/3d-models/knob-4395e17b255f4b3e80be46670b1ef53b
+* author:	José Paulo (https://sketchfab.com/josepaulo)
+
+Model License:
+* license type:	CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)
+* requirements:	Author must be credited. Modified versions must have the same license. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Knob" (https://sketchfab.com/3d-models/knob-4395e17b255f4b3e80be46670b1ef53b) by José Paulo (https://sketchfab.com/josepaulo) licensed under CC-BY-SA-4.0 (http://creativecommons.org/licenses/by-sa/4.0/)

@@ -1,0 +1,78 @@
+- !<AssetImportMetadata/36117c09-dfd8-d954-232b-a08556c936ce>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> a1cf6497-ab9f-40f3-9830-41b5fee38b66
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> a1cf6497-ab9f-40f3-9830-41b5fee38b66
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    AssetLibraryId: 74KvpxwzBlXZ3pPQlnphK
+  AssetDataMap:
+    JavaScriptAsset: !<own> fcbb77c4-e579-4fad-9418-9f2719924b97
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/fcbb77c4-e579-4fad-9418-9f2719924b97>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 5b973c51-8a52-4491-b60c-1f44d9dcf754
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    advanced: false
+    distanceThreshold: false
+    endFollowTriggers: false
+    followCondition: false
+    followObject: false
+    followType: false
+    handType: false
+    ignoreDepth: false
+    logMessage: false
+    positionJointNames: false
+    positionSmooth: false
+    resetPosition: false
+    resetRotation: false
+    rotationJointNames: false
+    rotationSmooth: false
+    sceneCamera: false
+    startFollowTriggers: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - handType: 0
+      followType: 0
+      followObject: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      positionJointNames: !<string[]>
+        []
+      rotationJointNames: !<string[]>
+        []
+      positionSmooth: 0.200000
+      rotationSmooth: 0.200000
+      logMessage: false
+      advanced: false
+      resetRotation: false
+      resetPosition: false
+      followCondition: 0
+      distanceThreshold: !<float> 10.000000
+      ignoreDepth: false
+      sceneCamera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+      startFollowTriggers: !<string[]>
+        []
+      endFollowTriggers: !<string[]>
+        []
+  ScriptTypes:
+    -
+      {}
