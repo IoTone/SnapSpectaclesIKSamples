@@ -30,11 +30,11 @@
   Name: engine_exhaust 4
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: -6.570652, y: -4.893984, z: 0.131076}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: -6.570652, y: -4.893984, z: 0.131076}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> ec9d0fbf-5f53-416a-8ab2-91a3048acf43
   Components:
@@ -45,11 +45,11 @@
   Name: blendshapes1
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.727880, z: 0.000000}
-    rotation: {x: -180.000000, y: 0.000000, z: 180.000000}
-    scale: {x: 0.900000, y: 0.900000, z: 0.900000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.727880, z: 0.000000}
+    Rotation: {x: -180.000000, y: 0.000000, z: 180.000000}
+    Scale: {x: 0.900000, y: 0.900000, z: 0.900000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> b0e256ea-d856-487a-8f40-6ba6555a3d89
   Components:
@@ -181,26 +181,64 @@
   Name: engine_exhaust 3
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 6.500722, y: -4.893984, z: -0.020199}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 6.500722, y: -4.893984, z: -0.020199}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> c69c4fd1-9af4-41a9-be84-17a9f10c1ab5
   Components:
     []
 - !<SceneObject/6a414e96-11ae-4fe2-a376-cf8e4425e4d0>
   PrefabRemaps:
-    []
+    - 1378f917-7ea8-4d20-b230-fa882d723f22: 1378f917-7ea8-4d20-4dcf-0577d28dc0dd
+    - 1d1fbab3-ca08-42c6-8a5e-397bee76e25f: 1d1fbab3-ca08-42c6-75a1-c68411891da0
+    - 29cde2ae-a564-461d-80cd-96592dc6c04a: 29cde2ae-a564-461d-7f32-69a6d2393fb5
+    - 2d181510-55cc-4c35-8ce3-f03ee214e5e0: 2d181510-55cc-4c35-731c-0fc11deb1a1f
+    - 3bc37a77-b2d1-4440-999f-436262651c28: 3bc37a77-b2d1-4440-6660-bc9d9d9ae3d7
+    - 3efddc10-ac21-4d20-8105-ffb48b553ff2: 3efddc10-ac21-4d20-7efa-004b74aac00d
+    - 41d7f626-d480-4b6f-8670-9a553454248f: 41d7f626-d480-4b6f-798f-65aacbabdb70
+    - 4936a38a-8756-4b76-a4c4-f9079b29db7c: 4936a38a-8756-4b76-5b3b-06f864d62483
+    - 52a98b5d-31c3-48ac-ae32-f639447226b0: 52a98b5d-31c3-48ac-51cd-09c6bb8dd94f
+    - 655f027b-7299-450d-936e-e51eb1786764: 655f027b-7299-450d-6c91-1ae14e87989b
+    - 6a414e96-11ae-4fe2-a376-cf8e4425e4d0: 6a414e96-11ae-4fe2-5c89-3071bbda1b2f
+    - 6a99906b-1e40-46d3-bb24-793658f9fc1b: 6a99906b-1e40-46d3-44db-86c9a70603e4
+    - 6f5cc554-34f0-42c2-b890-5467db26e908: 6f5cc554-34f0-42c2-476f-ab9824d916f7
+    - 7ae8f441-c49f-4852-884c-ff90a24d7e4d: 7ae8f441-c49f-4852-77b3-006f5db281b2
+    - 7c18e549-1212-4df6-830f-46c6ab694d47: 7c18e549-1212-4df6-7cf0-b9395496b2b8
+    - 81db6b26-56be-4112-8e2a-aba5adc19a67: 81db6b26-56be-4112-71d5-545a523e6598
+    - 8415fe38-925a-4d1f-9190-3d8b564b105c: 8415fe38-925a-4d1f-6e6f-c274a9b4efa3
+    - 86e929cb-3a4e-42b3-9c92-ab356b888002: 86e929cb-3a4e-42b3-636d-54ca94777ffd
+    - 933c5c0b-13e8-465c-8dd6-96d4e7a37476: 933c5c0b-13e8-465c-7229-692b185c8b89
+    - 975c1f2d-ced5-4011-a48b-af800814a0e9: 975c1f2d-ced5-4011-5b74-507ff7eb5f16
+    - 9eeeb8e3-2b53-4d5b-9f36-6981f2f76afa: 9eeeb8e3-2b53-4d5b-60c9-967e0d089505
+    - a61e485f-0c00-4181-a5cf-4f9ad3a0e0a1: a61e485f-0c00-4181-5a30-b0652c5f1f5e
+    - a683f797-86cf-4f9a-b9e0-8d750520ce0c: a683f797-86cf-4f9a-461f-728afadf31f3
+    - b0e256ea-d856-487a-8f40-6ba6555a3d89: b0e256ea-d856-487a-70bf-9459aaa5c276
+    - b389d894-14d1-4009-9612-ef4d2fff5fb5: b389d894-14d1-4009-69ed-10b2d000a04a
+    - b79e8875-e5c4-4fcd-8de0-e835ee844b7d: b79e8875-e5c4-4fcd-721f-17ca117bb482
+    - c69c4fd1-9af4-41a9-be84-17a9f10c1ab5: c69c4fd1-9af4-41a9-417b-e8560ef3e54a
+    - cb664491-f357-4064-b4bd-87bb1e13876f: cb664491-f357-4064-4b42-7844e1ec7890
+    - d212dd29-662c-4265-bb9f-06d4338b3d37: d212dd29-662c-4265-4460-f92bcc74c2c8
+    - d589a082-14d2-4259-a71c-9b6f421d3d3e: d589a082-14d2-4259-58e3-6490bde2c2c1
+    - d837a9dd-3e8e-45a4-85c9-1b2a3571bdfb: d837a9dd-3e8e-45a4-7a36-e4d5ca8e4204
+    - d97db941-6c09-4766-88b2-5067605c214d: d97db941-6c09-4766-774d-af989fa3deb2
+    - dbb41444-3acd-4e0d-8775-1dc80123b8e4: dbb41444-3acd-4e0d-788a-e237fedc471b
+    - dc53c6b6-40f1-47da-9cb9-c74dda95b8fe: dc53c6b6-40f1-47da-6346-38b2256a4701
+    - ec9d0fbf-5f53-416a-8ab2-91a3048acf43: ec9d0fbf-5f53-416a-754d-6e5cfb7530bc
+    - ee646eb6-04aa-4666-af60-a50e9a94961a: ee646eb6-04aa-4666-509f-5af1656b69e5
+    - f6bf520c-6834-4e5d-91e6-4ff4bd9ca34e: f6bf520c-6834-4e5d-6e19-b00b42635cb1
+    - f7fc48d0-d40b-41a2-a264-0b7f4385766c: f7fc48d0-d40b-41a2-5d9b-f480bc7a8993
+    - f963300f-7efd-4b9c-97e5-26cca9b08405: f963300f-7efd-4b9c-681a-d933564f7bfa
   Name: Modern Fins
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: -16.653543, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -16.653543, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> a683f797-86cf-4f9a-b9e0-8d750520ce0c
     - !<own> a61e485f-0c00-4181-a5cf-4f9ad3a0e0a1
@@ -306,11 +344,11 @@
   Name: engine_exhaust 1
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: -0.048480, y: -4.893984, z: 6.339403}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.048480, y: -4.893984, z: 6.339403}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> 29cde2ae-a564-461d-80cd-96592dc6c04a
   Components:
@@ -344,11 +382,11 @@
   Name: glow_plane
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.021074, y: -0.043960, z: -0.100001}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 2.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.021074, y: -0.043960, z: -0.100001}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 2.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -359,11 +397,11 @@
   Name: glow_plane
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: -0.053362, y: -0.069726, z: -0.158992}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 2.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.053362, y: -0.069726, z: -0.158992}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 2.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -374,11 +412,11 @@
   Name: Custom Mesh Emitter 2
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: -4.784941, z: -6.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -4.784941, z: -6.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -389,11 +427,11 @@
   Name: Custom Mesh Emitter 1
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: -4.784941, z: 6.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -4.784941, z: 6.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -404,11 +442,11 @@
   Name: glow_plane
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.006524, y: -0.077701, z: -0.157105}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 2.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.006524, y: -0.077701, z: -0.157105}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 2.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -419,11 +457,11 @@
   Name: Custom Mesh Emitter 3
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 6.000000, y: -4.784941, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 6.000000, y: -4.784941, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -434,11 +472,11 @@
   Name: engine_exhaust 2
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: -0.033565, y: -4.893984, z: -6.371538}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 2.000000, y: 2.000000, z: 2.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.033565, y: -4.893984, z: -6.371538}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 2.000000, y: 2.000000, z: 2.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> d97db941-6c09-4766-88b2-5067605c214d
   Components:
@@ -449,11 +487,11 @@
   Name: blendshapes1
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.727880, z: 0.000000}
-    rotation: {x: -180.000000, y: 0.000000, z: 180.000000}
-    scale: {x: 0.900000, y: 0.900000, z: 0.900000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.727880, z: 0.000000}
+    Rotation: {x: -180.000000, y: 0.000000, z: 180.000000}
+    Scale: {x: 0.900000, y: 0.900000, z: 0.900000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> 975c1f2d-ced5-4011-a48b-af800814a0e9
   Components:
@@ -465,11 +503,11 @@
   Name: Custom Mesh Emitter 4
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: -6.000000, y: -4.784941, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: -6.000000, y: -4.784941, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -513,11 +551,11 @@
   Name: blendshapes1
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.727880, z: 0.000000}
-    rotation: {x: -180.000000, y: 0.000000, z: 180.000000}
-    scale: {x: 0.900000, y: 0.900000, z: 0.900000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.727880, z: 0.000000}
+    Rotation: {x: -180.000000, y: 0.000000, z: 180.000000}
+    Scale: {x: 0.900000, y: 0.900000, z: 0.900000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> 9eeeb8e3-2b53-4d5b-9f36-6981f2f76afa
   Components:
@@ -569,11 +607,11 @@
   Name: blendshapes1
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.727880, z: 0.000000}
-    rotation: {x: -180.000000, y: 0.000000, z: 180.000000}
-    scale: {x: 0.900000, y: 0.900000, z: 0.900000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.727880, z: 0.000000}
+    Rotation: {x: -180.000000, y: 0.000000, z: 180.000000}
+    Scale: {x: 0.900000, y: 0.900000, z: 0.900000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> f963300f-7efd-4b9c-97e5-26cca9b08405
   Components:
@@ -643,11 +681,11 @@
   Name: glow_plane
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: -0.029452, y: -0.099991, z: -0.213263}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 2.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: -0.029452, y: -0.099991, z: -0.213263}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 2.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:

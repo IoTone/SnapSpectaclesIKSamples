@@ -10,11 +10,11 @@
   Name: ContactName
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -111,11 +111,11 @@
   Name: PinchButton
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.825276, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.825276, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> d30d55d4-56d8-4c80-87a1-8bea52789b04
   Components:
@@ -157,15 +157,18 @@
     Mode: Solid
     Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     TileCount: 5.000000
     TileZone: Rect
     TextureStretch: FitWidth
+  BlendMode: PremultipliedAlpha
   Outline: !<OutlineSettings>
     Enabled: false
     Fill: !<TextFill>
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
@@ -176,6 +179,7 @@
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
@@ -187,6 +191,7 @@
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
@@ -327,11 +332,11 @@
   Name: ContactDetails
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -400,15 +405,18 @@
     Mode: Solid
     Color: {x: 1.000000, y: 1.000000, z: 1.000000, w: 0.600000}
     Texture: !<reference> 00000000-0000-0000-0000-000000000000
+    ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
     TileCount: 5.000000
     TileZone: Rect
     TextureStretch: FitWidth
+  BlendMode: PremultipliedAlpha
   Outline: !<OutlineSettings>
     Enabled: false
     Fill: !<TextFill>
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
@@ -419,6 +427,7 @@
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
@@ -430,6 +439,7 @@
       Mode: Solid
       Color: {x: 0.000000, y: 0.000000, z: 0.000000, w: 1.000000}
       Texture: !<reference> 00000000-0000-0000-0000-000000000000
+      ColorTint: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
       TileCount: 5.000000
       TileZone: Rect
       TextureStretch: FitWidth
@@ -470,11 +480,11 @@
   Name: Background
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -537,11 +547,11 @@
   Name: Pinch Button Mesh
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -553,11 +563,11 @@
   Name: Bitmoji
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
@@ -565,15 +575,40 @@
     - !<own> ec6ef17a-d9cf-4fc4-8eac-a2c5df087885
 - !<SceneObject/d9458e70-e7da-4fd2-b255-9600abd6c8e8>
   PrefabRemaps:
-    []
+    - 0298794c-91a1-412f-93ae-ed4e1a98f07a: 0298794c-91a1-412f-6c51-12b1e5670f85
+    - 05937f73-c87a-4785-879e-653f4bd7cbfe: 05937f73-c87a-4785-7861-9ac0b4283401
+    - 06286a0e-f039-41b9-aad5-4779d25d17f6: 06286a0e-f039-41b9-552a-b8862da2e809
+    - 0d38bdbf-7c0d-4282-87af-a9cf62c4fda8: 0d38bdbf-7c0d-4282-7850-56309d3b0257
+    - 1bbf856a-0fc3-4fb7-8047-00850d0ab14f: 1bbf856a-0fc3-4fb7-7fb8-ff7af2f54eb0
+    - 2a33923e-ffa7-48bc-bffe-9579f9595a8c: 2a33923e-ffa7-48bc-4001-6a8606a6a573
+    - 2bdef6c8-aa9b-4e4b-95f3-1f5a34f788cd: 2bdef6c8-aa9b-4e4b-6a0c-e0a5cb087732
+    - 2e1d3187-b3ed-478a-93ad-7f99744f2d66: 2e1d3187-b3ed-478a-6c52-80668bb0d299
+    - 36ca1216-3ea2-432a-b0ae-c73a2bd49b37: 36ca1216-3ea2-432a-4f51-38c5d42b64c8
+    - 4d2eb700-988c-4db5-a297-57f5777dac34: 4d2eb700-988c-4db5-5d68-a80a888253cb
+    - 51d51986-29bd-43bf-afdc-e00a0c5dcfa4: 51d51986-29bd-43bf-5023-1ff5f3a2305b
+    - 54435327-784f-4c7d-a49d-383204494866: 54435327-784f-4c7d-5b62-c7cdfbb6b799
+    - aed271ca-fdcc-4482-99e2-bb97eecefd80: aed271ca-fdcc-4482-661d-44681131027f
+    - b47d63cf-4961-4e51-9eb0-3a2352e16a21: b47d63cf-4961-4e51-614f-c5dcad1e95de
+    - b49ea6f7-46eb-4328-9feb-b8cebe4166fa: b49ea6f7-46eb-4328-6014-473141be9905
+    - ba03df6e-9941-463b-a602-23d926335075: ba03df6e-9941-463b-59fd-dc26d9ccaf8a
+    - c3062ad4-fda5-44f0-a70b-6c6f9ebb3b15: c3062ad4-fda5-44f0-58f4-93906144c4ea
+    - c7ee0d5a-1eb2-482f-af79-2e732d73c445: c7ee0d5a-1eb2-482f-5086-d18cd28c3bba
+    - d30d55d4-56d8-4c80-87a1-8bea52789b04: d30d55d4-56d8-4c80-785e-7415ad8764fb
+    - d640c5ee-7cc3-44d4-8cb8-4f03f530099f: d640c5ee-7cc3-44d4-7347-b0fc0acff660
+    - d9458e70-e7da-4fd2-b255-9600abd6c8e8: d9458e70-e7da-4fd2-4daa-69ff54293717
+    - da7a487d-10e8-4266-9382-f6b3fd5406a3: da7a487d-10e8-4266-6c7d-094c02abf95c
+    - ec6ef17a-d9cf-4fc4-8eac-a2c5df087885: ec6ef17a-d9cf-4fc4-7153-5d3a20f7877a
+    - f060b6e1-03a1-4513-a02b-49b921a2cbb8: f060b6e1-03a1-4513-5fd4-b646de5d3447
+    - fb8ed0b0-44c3-4910-b742-6eb1c1240b0c: fb8ed0b0-44c3-4910-48bd-914e3edbf4f3
+    - ff7bd9f1-8bed-4a35-aae2-85cf07766a20: ff7bd9f1-8bed-4a35-551d-7a30f88995df
   Name: ScrollViewListItem
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.300000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.300000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     - !<own> 0298794c-91a1-412f-93ae-ed4e1a98f07a
     - !<own> 54435327-784f-4c7d-a49d-383204494866

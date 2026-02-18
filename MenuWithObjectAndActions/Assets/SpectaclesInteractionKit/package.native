@@ -2,9 +2,9 @@
   PackagePath: ""
   StudioVersion:
     major: 5
-    minor: 10
-    patch: 1
-    build: 25061003
+    minor: 15
+    patch: 3
+    build: 26011319
     type: Unset
     buildFlavor: ""
     timestamp: 0
@@ -24,16 +24,18 @@
   SvgIcon: ""
   SetupScript:
     code: ""
-  InternalVersion: 1
   VersionMajor: 0
   VersionMinor: 10
   VersionPatch: 0
-  UpdateCheckpoint: 61
+  UpdateCheckpoint: 76
   ExportUid: be6fd4cf-737d-41f1-adeb-b97e6d34b3c4
   ComponentUid: 0f7a0bbe-777c-41a5-b979-0b0430f25836
-  CurrentVisibility: Editable
-  MaxVisibility: Editable
+  PackagePolicy: ShouldBeUnpacked
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
   Instantiable: !<reference> 00000000-0000-0000-0000-000000000000
   AssetLibraryDependencyStructure: !<AssetLibraryDependencyStructure>
     Name: SpectaclesInteractionKit

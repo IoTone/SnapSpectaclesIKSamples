@@ -26,15 +26,16 @@
     {}
 - !<SceneObject/8f6a3f6f-c647-4c0c-b40e-942485ee1324>
   PrefabRemaps:
-    []
+    - 7a893ddb-bf57-4471-ba25-a1e88c2f10fd: 7a893ddb-bf57-4471-45da-5e1773d0ef02
+    - 8f6a3f6f-c647-4c0c-b40e-942485ee1324: 8f6a3f6f-c647-4c0c-4bf1-6bdb7a11ecdb
   Name: Modern Body Tube
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: -1.228443, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -1.228443, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:

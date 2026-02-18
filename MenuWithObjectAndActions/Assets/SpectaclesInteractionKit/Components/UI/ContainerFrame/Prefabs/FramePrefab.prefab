@@ -6,15 +6,17 @@
   RetainAssets: true
 - !<SceneObject/2de514b9-1878-47c7-83ca-0661d1b4d70b>
   PrefabRemaps:
-    []
+    - 2de514b9-1878-47c7-83ca-0661d1b4d70b: 2de514b9-1878-47c7-7c35-f99e2e4b28f4
+    - 63679e27-dd2a-43d2-92a3-7a3b18faeabd: 63679e27-dd2a-43d2-6d5c-85c4e7051542
+    - a829bb2f-bf3c-4fe7-b747-09f382bf0a6c: a829bb2f-bf3c-4fe7-48b8-f60c7d40f593
   Name: FramePrefab
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:

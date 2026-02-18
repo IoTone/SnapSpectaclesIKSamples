@@ -6,15 +6,18 @@
   RetainAssets: true
 - !<SceneObject/08d63cc3-1e18-4065-9034-c456dfdf8cfd>
   PrefabRemaps:
-    []
+    - 08d63cc3-1e18-4065-9034-c456dfdf8cfd: 08d63cc3-1e18-4065-6fcb-3ba920207302
+    - 1dfab4fc-760d-4222-900d-82dfd0850d2e: 1dfab4fc-760d-4222-6ff2-7d202f7af2d1
+    - 439858c2-8703-4372-975b-55fdc80d571d: 439858c2-8703-4372-68a4-aa0237f2a8e2
+    - e1d8a241-a4de-4e2c-8389-4c6aa5f625d2: e1d8a241-a4de-4e2c-7c76-b3955a09da2d
   Name: container-button
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: -1.935684, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: -1.935684, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:

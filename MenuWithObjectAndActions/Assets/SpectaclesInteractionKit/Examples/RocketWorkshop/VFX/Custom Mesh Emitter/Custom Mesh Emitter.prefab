@@ -19,15 +19,16 @@
   VFXAsset: !<reference> 8ac631a7-b459-40f1-9e83-b9793ed5868a
 - !<SceneObject/c9b8fecb-036e-4558-9f6b-cf6c123fc2d6>
   PrefabRemaps:
-    []
+    - ae63f88f-8ef2-4fa9-b186-e8ea94f583af: ae63f88f-8ef2-4fa9-4e79-17156b0a7c50
+    - c9b8fecb-036e-4558-9f6b-cf6c123fc2d6: c9b8fecb-036e-4558-6094-3093edc03d29
   Name: Custom Mesh Emitter
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: -28.166780, z: 0.000092}
-    rotation: {x: -0.000000, y: -0.000001, z: 0.000000}
-    scale: {x: 5.000000, y: 5.000000, z: 5.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -28.166780, z: 0.000092}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 5.000000, y: 5.000000, z: 5.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:

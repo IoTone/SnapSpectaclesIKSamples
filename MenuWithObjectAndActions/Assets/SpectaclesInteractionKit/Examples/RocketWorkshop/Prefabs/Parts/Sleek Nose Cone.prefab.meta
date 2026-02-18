@@ -4,7 +4,7 @@
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> f8c6c126-d1c9-46e6-965f-f185cb98ee55
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
   ExtraData:
     {}
   AssetDataMap:
@@ -14,33 +14,7 @@
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ObjectPrefab/122c4ab4-cc47-482e-9e2b-5e44b6233e1c>
-  PackagePath: ""
-  objects:
-    - !<own> cb4a6c5d-d914-4e8a-825b-185e6c0c01ce
-  LazyLoading: false
-  RetainAssets: true
-- !<ObjectPrefabAssetData/94afbc78-efc6-4127-9c8b-118521b06401>
-  SourceRemaps:
-    - 4f30d76b-2396-4c49-9742-6251f6e07fbe: d6b01d28-40e4-4a99-acb3-ddaa2e9b1db2
-    - 64adaad9-e5f0-4f98-938a-b8c253b18502: cb4a6c5d-d914-4e8a-825b-185e6c0c01ce
-  SourceState: !<own> 122c4ab4-cc47-482e-9e2b-5e44b6233e1c
-- !<SceneObject/cb4a6c5d-d914-4e8a-825b-185e6c0c01ce>
-  PrefabRemaps:
-    []
-  Name: Sleek Nose Cone
-  Enabled: true
-  Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 21.029972, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
-  Children:
-    []
-  Components:
-    - !<own> d6b01d28-40e4-4a99-acb3-ddaa2e9b1db2
-- !<RenderMeshVisual/d6b01d28-40e4-4a99-acb3-ddaa2e9b1db2>
+- !<RenderMeshVisual/4f30d76b-2396-4c49-68bd-9dae091f8041>
   PrefabRemaps:
     []
   Name: component_0
@@ -60,3 +34,23 @@
   BlendNormals: false
   BlendShapes:
     {}
+- !<SceneObject/64adaad9-e5f0-4f98-6c75-473dac4e7afd>
+  PrefabRemaps:
+    []
+  Name: Sleek Nose Cone
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 8.794556, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 4f30d76b-2396-4c49-68bd-9dae091f8041
+- !<ObjectPrefabAssetData/94afbc78-efc6-4127-9c8b-118521b06401>
+  Prototype: !<ObjectOwner/77e298df-60ca-42b4-b312-19c9b4ad190c>
+    PackagePath: ""
+    objects:
+      - !<own> 64adaad9-e5f0-4f98-6c75-473dac4e7afd

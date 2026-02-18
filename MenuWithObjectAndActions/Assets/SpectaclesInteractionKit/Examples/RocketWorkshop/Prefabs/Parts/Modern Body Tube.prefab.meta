@@ -4,7 +4,7 @@
   ImporterName: ObjectPrefabImporter
   PrimaryAsset: !<reference> a9931968-3294-457d-b5f4-67213a87aec0
   PackageType: NotAPackage
-  PackagePolicy: CannotBeUnpacked
+  LegacyPackagePolicy: ~
   ExtraData:
     {}
   AssetDataMap:
@@ -14,7 +14,12 @@
   ImporterSettings: !<AssetImporterSettings>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<RenderMeshVisual/0772ec44-08f4-436f-a44d-f5c0ef3c75fd>
+- !<ObjectPrefabAssetData/0b82626f-e864-4422-bbe9-c880eb84b2c6>
+  Prototype: !<ObjectOwner/a16c78cb-3d2a-4f58-98a2-76d558510d3c>
+    PackagePath: ""
+    objects:
+      - !<own> 8f6a3f6f-c647-4c0c-4bf1-6bdb7a11ecdb
+- !<RenderMeshVisual/7a893ddb-bf57-4471-45da-5e1773d0ef02>
   PrefabRemaps:
     []
   Name: component_0
@@ -34,29 +39,18 @@
   BlendNormals: false
   BlendShapes:
     {}
-- !<ObjectPrefabAssetData/0b82626f-e864-4422-bbe9-c880eb84b2c6>
-  SourceRemaps:
-    - 7a893ddb-bf57-4471-ba25-a1e88c2f10fd: 0772ec44-08f4-436f-a44d-f5c0ef3c75fd
-    - 8f6a3f6f-c647-4c0c-b40e-942485ee1324: 9cf844de-671b-4344-ac82-6d109d82dd2a
-  SourceState: !<own> e9559767-f6da-4f6c-a34f-8f004b7d7d55
-- !<SceneObject/9cf844de-671b-4344-ac82-6d109d82dd2a>
+- !<SceneObject/8f6a3f6f-c647-4c0c-4bf1-6bdb7a11ecdb>
   PrefabRemaps:
     []
   Name: Modern Body Tube
   Enabled: true
   Layers: 1
-  LocalTransform:
-    position: {x: 0.000000, y: 13.478287, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
-    hasSegmentScaleCompensation: false
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: -1.228443, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
   Children:
     []
   Components:
-    - !<own> 0772ec44-08f4-436f-a44d-f5c0ef3c75fd
-- !<ObjectPrefab/e9559767-f6da-4f6c-a34f-8f004b7d7d55>
-  PackagePath: ""
-  objects:
-    - !<own> 9cf844de-671b-4344-ac82-6d109d82dd2a
-  LazyLoading: false
-  RetainAssets: true
+    - !<own> 7a893ddb-bf57-4471-45da-5e1773d0ef02
